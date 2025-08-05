@@ -1,0 +1,41 @@
+[
+  {
+    "id": "macbookAirM2",
+    "name": "맥북 에어 M2",
+    "description": "애플 맥북 에어 M2 칩 탑재, 8GB RAM, 256GB SSD",
+    "specs": {
+      "CPU": "Apple M2",
+      "RAM": "8GB",
+      "Storage": "256GB SSD",
+      "Display": "13.6인치 Liquid Retina",
+      "Weight": "1.24kg",
+      "Battery": "18시간"
+    }
+  },
+  {
+    "id": "lgGram",
+    "name": "LG 그램",
+    "description": "LG의 가벼운 노트북, Intel i7, 16GB RAM, 512GB SSD",
+    "specs": {
+      "CPU": "Intel Core i7",
+      "RAM": "16GB",
+      "Storage": "512GB SSD",
+      "Display": "16인치 IPS",
+      "Weight": "1.19kg",
+      "Battery": "22시간"
+    }
+  },
+  {
+    "id": "asusZenbook",
+    "name": "ASUS Zenbook",
+    "description": "ASUS 프리미엄 울트라북, Intel i5, 8GB RAM, 256GB SSD",
+    "specs": {
+      "CPU": "Intel Core i5",
+      "RAM": "8GB",
+      "Storage": "256GB SSD",
+      "Display": "14인치 OLED",
+      "Weight": "1.3kg",
+      "Battery": "15시간"
+    }
+  }
+]

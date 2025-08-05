@@ -1,0 +1,28 @@
+[
+  {
+    "id": "airpodsPro2",
+    "name": "에어팟 프로 2세대",
+    "buyLink": "https://link.coupang.com/a/cIMDkn",
+    "image": "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/d1f1/f1f3a30a9c39d78066ed3653f4c611a316a48cf5ae80887ee8939cfbce27.jpg",
+    "specs": {
+      "모델명": "A3287",
+      "출시일": "2024.09",
+      "무게": "170g",
+      "칩셋": "Apple A18",
+      "카메라": "48MP"
+    }
+  },
+  {
+    "id": "galaxyBuds3",
+    "name": "갤럭시 버즈3",
+    "buyLink": "https://link.coupang.com/a/cIMD5o",
+    "image": "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/01b1/6ce268018d41dfebb95876daf901bf0f5fec8474d7cc0b41159800895024.jpg",
+    "specs": {
+      "모델명": "A3287",
+      "출시일": "2024.09",
+      "무게": "170g",
+      "칩셋": "Apple A18",
+      "카메라": "48MP"
+    }
+  }
+]
