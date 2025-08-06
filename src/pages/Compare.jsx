@@ -127,9 +127,14 @@ function Compare() {
 
   return (
     <S.Container>
-      <S.BackButton onClick={() => navigate(-1)} title="뒤로가기">
-        ⬅ 뒤로가기
-      </S.BackButton>
+      <S.HeaderButtons>
+        <S.BackButton onClick={() => navigate(-1)} title="뒤로가기">
+          ⬅ 뒤로가기
+        </S.BackButton>
+        <S.HomeButton onClick={() => navigate('/')} title="홈으로">
+          홈으로
+        </S.HomeButton>
+      </S.HeaderButtons>
 
       <h1>스펙 비교</h1>
       <S.CompareTable>
@@ -139,7 +144,7 @@ function Compare() {
             <th>
               {product1 ? (
                 <>
-                  <S.TitleDiv style={{ height: titleHeight }} ref={leftTitleRef}>
+                  <S.TitleDiv style={{ height: titleHeight }} ref={leftTitleRef} onClick={() => navigate(`/product/${product1.id}`)}>
                     {product1.name}
                     <S.MinusBtn
                       onClick={() => {
@@ -156,6 +161,7 @@ function Compare() {
                   <S.ProductImage
                     src={Array.isArray(product1.image) ? product1.image[0] : product1.image}
                     alt={product1.name}
+                    onClick={() => navigate(`/product/${product1.id}`)}
                   />
                   {product1.buyLink && (
                     <S.BuyButton onClick={() => window.open(product1.buyLink, '_blank')}>
@@ -214,7 +220,7 @@ function Compare() {
             <th>
               {product2 ? (
                 <>
-                  <S.TitleDiv style={{ height: titleHeight }} ref={rightTitleRef}>
+                  <S.TitleDiv style={{ height: titleHeight }} ref={rightTitleRef} onClick={() => navigate(`/product/${product2.id}`)}>
                     {product2.name}
                     <S.MinusBtn
                       onClick={() => {
@@ -231,6 +237,7 @@ function Compare() {
                   <S.ProductImage
                     src={Array.isArray(product2.image) ? product2.image[0] : product2.image}
                     alt={product2.name}
+                    onClick={() => navigate(`/product/${product2.id}`)}
                   />
                   {product2.buyLink && (
                     <S.BuyButton onClick={() => window.open(product2.buyLink, '_blank')}>

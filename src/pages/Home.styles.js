@@ -176,3 +176,9 @@ export const TitleFont = styled.p`
     margin-top: -10px;
   }
 `;
+export const NoResult = styled.p`
+  text-align: center;
+  margin-top: 50px;
+  font-size: 18px;
+  color: #666;
+`;

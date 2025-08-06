@@ -98,7 +98,7 @@ const filteredProducts = allProducts.filter(product => {
         onChange={e => setSearchTerm(e.target.value)}
       />
 
-      {activeTab === 'all' && (
+      {activeTab === 'all' && searchTerm.trim() === '' && (
         <S.ExampleComparisonList>
           {exampleComparisons.map(({ id1, id2, title }) => {
             const p1 = allProducts.find(p => p.id === id1);
@@ -152,7 +152,7 @@ const filteredProducts = allProducts.filter(product => {
             </S.ProductCard>
           ))
         ) : (
-          <p>검색 결과가 없습니다.</p>
+          <S.NoResult>검색 결과가 없습니다.</S.NoResult>
         )}
       </S.ProductList>
     </S.Container>

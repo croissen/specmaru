@@ -22,6 +22,26 @@ export const BackButton = styled.button`
   }
 `;
 
+export const HeaderButtons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+export const HomeButton = styled.button`
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+`;
+
 export const CompareTable = styled.table`
   width: 100%;
   border-collapse: collapse;

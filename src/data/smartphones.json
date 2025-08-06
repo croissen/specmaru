@@ -3,13 +3,33 @@
     "id": "iphone16",
     "name": "아이폰 16",
     "buyLink": "https://link.coupang.com/a/cIL8jT",
-    "image": "https://thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1059925168582730-31ca7a7d-607d-4514-9735-f34228c6509e.jpg",
+    "image": 
+    [
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1059925168582730-31ca7a7d-607d-4514-9735-f34228c6509e.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1068427499971725-777aaedb-c0ae-4729-afc7-c2f9d8ddddb7.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/138992441209597-0cfd396b-9cda-4bf9-9b17-1dc8aea2ab3c.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/138993627507969-1a5f1204-b17a-40d9-8e87-05739743839b.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1059922619536670-458d1765-ab0d-43f8-8ba8-5f3113401954.jpg"
+    ],
     "specs": {
+      "제조사": "애플 Apple",
       "모델명": "A3287",
-      "출시일": "2024.09ㄹㅇㅎㅇㅀㅇㅀㅇㅀㄹㅇㅎㅇㅎㅇㅀㅇ",
-      "무게": "170gㅀㅀㄹㄹ홍ㄹㄹㄴ노ㅗㄴ노논ㄴㄴㄴㄴㄴㄴㄴㄴ노ㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅗㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ",
-      "칩셋": "Apple A18",
-      "카메라": "48MP"
+      "출시일": "2024.09",
+      "운영체제":"iOS 18",
+      "컬러":"화이트, 블랙, 울트라마린, 틸, 핑크",
+      "저장용량":"128GB, 256GB, 512GB",
+      "디스플레이":"15.5cm OLED\n해상도: 2556 x 1179 (460ppi)\n최대 밝기 2000니트(야외) / HDR 1600니트",
+      "재질":"알루미늄, 유리",
+      "크기":"71.6 x 147.6 x 7.8 mm",
+      "무게":"170g",
+      "칩":"A18, CPU 6코어, GPU 5코어",
+      "카메라":"4800만 듀얼 후면 + 1200만 전면 카메라, 야간 모드·HDR·2배 줌 지원",
+      "배터리용량":"3,561 mAh\n동영상 재생: 최대 22시간\n오디오 재생: 최대 80시간",
+      "충전":"20W 유선 고속충전, MagSafe 무선충전",
+      "커넥터":"USB‑C, USB 2 지원",
+      "추가사항":"페이스 ID, IP68 방수방진, Wi-Fi 7E, UWB 지원",
+      "공식가격": "128GB: 1,250,000원\n256GB: 1,400,000원\n512GB: 1,700,000원",
+      "쿠팡가격": "128GB: 1,212,500원\n256GB: 1,358,000원\n512GB: 1,598,000원"
     }
   },
   {
@@ -18,11 +38,23 @@
     "buyLink": "https://link.coupang.com/a/cIMupA",
     "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475309768964-d6150350-9f73-45fd-af6d-6466fa7cb3d9.jpg",
     "specs": {
+      "제조사": "애플 Apple",
       "모델명": "A3287",
       "출시일": "2024.09",
-      "무게": "170g",
-      "칩셋": "Apple A18이지만 해치지ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ 않아요 깸ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ불지 않아요 얌전해요 순해요",
-      "카메라": "48MP"
+      "운영체제":"iOS 18 with Apple Intelligence ",
+      "컬러":"",
+      "저장용량":"",
+      "디스플레이":"",
+      "재질":"",
+      "크기":"",
+      "무게":"",
+      "칩":"",
+      "카메라":"",
+      "배터리용량":"",
+      "충전":"",
+      "추가사항":"",
+      "공식가격": "Apple A18",
+      "쿠팡가격": "48MP"
     }
   },
   {
@@ -31,12 +63,23 @@
     "buyLink": "https://link.coupang.com/a/cIMupA",
     "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475309768964-d6150350-9f73-45fd-af6d-6466fa7cb3d9.jpg",
     "specs": {
+      "제조사": "애플 Apple",
       "모델명": "A3287",
       "출시일": "2024.09",
-      "무게": "170g",
-      "칩셋": "Apple A18이지만 해치지ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ 않아요 깸ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ불지 않아요 얌전해요 순해요",
-      "카메라": "48MP",
-      "특이사항": "벽돌"
+      "운영체제":"iOS 18 with Apple Intelligence ",
+      "컬러":"",
+      "저장용량":"",
+      "디스플레이":"",
+      "재질":"",
+      "크기":"",
+      "무게":"",
+      "칩":"",
+      "카메라":"",
+      "배터리용량":"",
+      "충전":"",
+      "추가사항":"",
+      "공식가격": "Apple A18",
+      "쿠팡가격": "48MP"
     }
   }
 ]

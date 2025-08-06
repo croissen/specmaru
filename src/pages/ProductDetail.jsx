@@ -34,9 +34,14 @@ function ProductDetail() {
   return (
     <S.Container>
       {/* 뒤로가기 버튼 */}
-      <S.BackButton onClick={() => navigate(-1)} title="뒤로가기">
-        ⬅ 뒤로가기
-      </S.BackButton>
+      <S.HeaderButtons>
+        <S.BackButton onClick={() => navigate(-1)} title="뒤로가기">
+          ⬅ 뒤로가기
+        </S.BackButton>
+        <S.HomeButton onClick={() => navigate('/')} title="홈으로">
+          홈으로
+        </S.HomeButton>
+      </S.HeaderButtons>
 
       <h1>{product.name}</h1>
 

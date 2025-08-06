@@ -87,6 +87,26 @@ export const BackButton = styled.button`
     transition: transform 0.2s ease;
   }
 `;
+export const HeaderButtons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+export const HomeButton = styled.button`
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+  }
+`;
+
 export const CoupangMent = styled.div`
   margin-top: 50px;
   font-size: 12px;
@@ -116,20 +136,38 @@ export const Arrow = styled.button`
   border-radius: 50%;
   transition: all 0.3s ease;
 
-  &:hover {
+ &:hover,
+  &:focus:hover {
     color: #0070f3;
     background: rgba(255, 255, 255, 0.9);
   }
 
-  &:first-of-type {
-    left: -100px; /* PC에서 이미지 바깥으로 넓게 떨어짐 */
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    color: #555; /* 기본 색상 */
+    background: rgba(255, 255, 255, 0.7); /* 기본 배경 */
   }
+
+  &:first-of-type {
+    left: -100px;
+  }
+
   &:last-of-type {
     right: -100px;
   }
-  &:focus {
-    outline: none;
-    color: #555; /* 포커스 시 색상 원래대로 */
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+    padding: 0.2rem 0.4rem;
+
+    &:first-of-type {
+      left: 1px;
+    }
+
+    &:last-of-type {
+      right: 1px;
+    }
   }
 
   @media (max-width: 768px) {
