@@ -18,12 +18,12 @@
       "운영체제":"iOS 18",
       "컬러":"화이트, 블랙, 울트라마린, 틸, 핑크",
       "저장용량":"128GB, 256GB, 512GB",
-      "디스플레이":"15.5cm OLED\n해상도: 2556 x 1179 (460ppi)\n최대 밝기 2000니트(야외) / HDR 1600니트",
+      "디스플레이":"15.5cm OLED\n해상도: FHD+ (2556 x 1179)\n최대밝기 2000니트/주사율 60Hz",
       "재질":"알루미늄, 유리",
-      "크기":"71.6 x 147.6 x 7.8 mm",
+      "크기":"147.6 x 71.6 x 7.8 mm",
       "무게":"170g",
       "칩":"A18, CPU 6코어, GPU 5코어",
-      "카메라":"4800만 듀얼 후면 + 1200만 전면 카메라, 야간 모드·HDR·2배 줌 지원",
+      "카메라": "후면 광각 48MP, 초광각 미지원\n전면 12MP\n야간 모드 / HDR / 2배 디지털 줌 지원",
       "배터리용량":"3,561 mAh",
       "충전":"20W 유선 고속충전, MagSafe 무선충전",
       "추가사항":"페이스 ID, IP68 방수방진, Wi-Fi 7E, UWB 지원",
@@ -34,23 +34,30 @@
   {
     "id": "galaxyS25",
     "name": "갤럭시 S25",
-    "buyLink": "https://link.coupang.com/a/cIMupA",
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475309768964-d6150350-9f73-45fd-af6d-6466fa7cb3d9.jpg",
-    "specs": {
+    "buyLink": "https://link.coupang.com/a/cI4tRG",
+    "image": 
+    [
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475309768964-d6150350-9f73-45fd-af6d-6466fa7cb3d9.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475389737312-20a4b376-db79-4be5-8325-2c6b2766c2ee.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475427934775-f8ff90c0-ed65-469b-967d-697c90ad4648.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475509730271-181690ce-4687-4902-a3fe-006d46813018.jpg"
+      
+    ],
+      "specs": {
       "제조사": "삼성 Samsung",
-      "모델명": "SM-S9310 (Galaxy S25)",
+      "모델명": "SM-S9310",
       "출시일": "2025.02",
       "운영체제": "Android 15 / One UI 7 (Galaxy AI)",
       "컬러": "아이스블루, 민트, 네이비, 실버 섀도우",
       "저장용량": "256GB, 512GB",
-      "디스플레이": "15.7cm Dynamic AMOLED 2X\n해상도: FHD+ (2340 x 1080)\n최대 밝기 1750니트 / 주사율 120Hz",
+      "디스플레이": "15.7cm Dynamic AMOLED 2X\n해상도: FHD+ (2340 x 1080)\n최대밝기 2600니트/주사율 120Hz",
       "재질": "알루미늄, 강화유리",
       "크기": "146.9 × 70.5 × 7.2 mm",
       "무게": "162g",
       "칩": "Snapdragon 8 Elite for Galaxy, 12GB RAM",
       "카메라": "초광각 12MP F2.2\n광각50MP F1.8\n망원 10MP F2.4\n전면 12MP F2.2",
       "배터리용량": "4000mAh",
-      "충전": "25W 유선 고속충전, 무선 및 역무선 충전 지원",
+      "충전": "25W 유선 고속충전, 무선 및 역무선 충전",
       "추가사항": "Wi‑Fi 7, Bluetooth 5.4, IP68, 7년 OS 업데이트 지원",
       "공식가격": "256GB: 1,155,000원\n512GB: 1,298,000원",
       "쿠팡가격": "256GB: 1,078,700원\n512GB: 1,216,900원"
@@ -59,32 +66,38 @@
   {
     "id": "galaxyS25Plus",
     "name": "갤럭시 S25+",
-    "buyLink": "https://link.coupang.com/a/cIMupA",
-    "image": "https://thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475309768964-d6150350-9f73-45fd-af6d-6466fa7cb3d9.jpg",
+    "buyLink": "https://link.coupang.com/a/cI4kYi",
+    "image": 
+    [
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475603057500-61ef1d06-b432-43fb-a37b-bd2539707f31.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475683573306-5b65bc18-d7a8-49fa-a682-476cf863720a.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475777474173-9cb90f90-121e-4a6c-9366-47e450aaef90.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475860211864-7c540ee5-7193-461e-b857-68ec93b02081.jpg"
+    ],
     "specs": {
       "제조사": "삼성 Samsung",
       "모델명": "SM-S9360",
       "출시일": "2025.02",
       "운영체제": "Android 15 / One UI 7 (Galaxy AI)",
-      "컬러": "아이스블루, 민트, 네이비, 실버 섀도우, 베이지",
+      "컬러": "아이스블루, 민트, 네이비, 실버 섀도우",
       "저장용량": "256GB, 512GB",
-      "디스플레이": "16.9cm Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대 밝기 미공개 / 주사율 120Hz",
+      "디스플레이": "16.9cm Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
       "재질": "알루미늄, 강화유리",
       "크기": "75.8 x 158.4 x 7.3 mm",
       "무게": "190g",
       "칩": "Snapdragon 8 Gen 4 for Galaxy, RAM 12GB",
       "카메라": "초광각 12MP F2.2\n광각50MP F1.8\n망원 10MP F2.4\n전면 12MP F2.2",
       "배터리용량": "4,900 mAh",
-      "충전": "25W 유선 고속충전, 무선 및 역무선 충전 지원",
+      "충전": "25W 유선 고속충전, 무선 및 역무선 충전",
       "추가사항": "지문 인식, IP68 방수방진, Wi-Fi 7, Bluetooth 5.4, 7년 OS 업데이트",
       "공식가격": "256GB: 1,353,000원\n512GB: 1,496,000원",
-      "쿠팡가격": "256GB: 미정\n512GB: 미정"
+      "쿠팡가격": "256GB: 1,270,500원\n512GB: 1,408,600원"
     }
   },
   {
     "id": "galaxyS25Ultra",
     "name": "갤럭시S 25 Ultra",
-    "buyLink": "https://link.coupang.com/a/cIMupA",
+    "buyLink": "https://link.coupang.com/a/cI4peS",
     "image": 
     [
       "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42476002615425-2c7fa92c-3e8c-4437-b3a0-e8640e6cca01.jpg",
@@ -99,14 +112,14 @@
       "운영체제": "Android 15 / One UI 7 (Galaxy AI)",
       "컬러": "그레이, 블랙, 실버블루, 화이트실버",
       "저장용량": "256GB, 512GB, 1TB",
-      "디스플레이": "17.4cm Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대 밝기 미공개 / 주사율 120Hz",
+      "디스플레이": "17.4cm Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
       "재질": "알루미늄, 강화유리",
       "크기": "77.6 x 162.8 x 8.2 mm",
       "무게": "218g",
       "칩": "Snapdragon 8 Gen 4 for Galaxy, RAM 12GB",
       "카메라": "초광각 50MP F1.9\n광각200MP F1.7\n망원1 10MP F2.4\n망원2 50MP F3.4\n전면 12MP F2.2",
       "배터리용량": "5,000 mAh",
-      "충전": "25W 유선 고속충전, 무선 및 역무선 충전 지원",
+      "충전": "25W 유선 고속충전, 무선 및 역무선 충전",
       "추가사항": "지문 인식, IP68 방수방진, Wi-Fi 7, Bluetooth 5.4, S펜 내장, 7년 OS 업데이트",
       "공식가격": "256GB: 1,698,400원\n512GB: 1,841,400원\n1TB: 2,127,400원",
       "쿠팡가격": "256GB: 1,589,760원\n512GB: 1,718,400원\n1TB: 2,021,400원"
