@@ -1,15 +1,15 @@
 [
   {
-    "id": "macbookAirM2",
-    "name": "맥북 에어 M2",
-    "description": "애플 맥북 에어 M2 칩 탑재, 8GB RAM, 256GB SSD",
+    "id": "macBookAir13",
+    "name": "맥북 에어 13",
+    "buyLink": "https://link.coupang.com/a/cIVkD9",
+    "image": "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/ee873829-47ab-4b91-8ed8-9886025626f9.jpg",
     "specs": {
-      "CPU": "Apple M2",
-      "RAM": "8GB",
-      "Storage": "256GB SSD",
-      "Display": "13.6인치 Liquid Retina",
-      "Weight": "1.24kg",
-      "Battery": "18시간"
+      "모델명": "A3287",
+      "출시일": "2024.09",
+      "무게": "170g",
+      "칩셋": "Apple A18",
+      "카메라": "48MP"
     }
   },
   {
@@ -36,6 +36,19 @@
       "Display": "14인치 OLED",
       "Weight": "1.3kg",
       "Battery": "15시간"
+    }
+  },
+  {
+    "id": "galaxyBook5Pro",
+    "name": "갤럭시북5 프로",
+    "buyLink": "https://link.coupang.com/a/cIVg6S",
+    "image": "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0245/55d4d804de54c11cd0dc82c863914de3cd9a00887e1e7899e8a088969a6c.jpg",
+    "specs": {
+      "모델명": "A3287",
+      "출시일": "2024.09",
+      "무게": "170g",
+      "칩셋": "Apple A18",
+      "카메라": "48MP"
     }
   }
 ]

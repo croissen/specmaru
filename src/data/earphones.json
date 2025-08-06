@@ -5,24 +5,37 @@
     "buyLink": "https://link.coupang.com/a/cIMDkn",
     "image": "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/d1f1/f1f3a30a9c39d78066ed3653f4c611a316a48cf5ae80887ee8939cfbce27.jpg",
     "specs": {
-      "모델명": "A3287",
-      "출시일": "2024.09",
-      "무게": "170g",
-      "칩셋": "Apple A18",
-      "카메라": "48MP"
+      "모델명": "SM-R630N",
+      "출시일": "2024.07",
+      "타입": "커널형",
+      "컬러": "블랙, 화이트",
+      "배터리 용량": "51/515mAh",
+      "스피커": "Enhanced 2 way",
+      "노이즈캔슬링(ANC)": "지원",
+      "재생시간": "5/28시간(ANC On)\n6/30시간(ANC Off)",
+      "블루투스": "v5.4",
+      "무게": "이어버드 5.4g\n케이스 46.5g"
     }
   },
   {
-    "id": "galaxyBuds3",
-    "name": "갤럭시 버즈3",
+    "id": "galaxyBuds3Pro",
+    "name": "갤럭시 버즈3 프로",
     "buyLink": "https://link.coupang.com/a/cIMD5o",
-    "image": "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/01b1/6ce268018d41dfebb95876daf901bf0f5fec8474d7cc0b41159800895024.jpg",
+    "image": [
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/01b1/6ce268018d41dfebb95876daf901bf0f5fec8474d7cc0b41159800895024.jpg",
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/58e0/e98fb6ad047dc5dda3fcf04d01afb6b7e5e1da8c0b4bfe7e5a454873b29e.jpg"
+      ],
     "specs": {
-      "모델명": "A3287",
-      "출시일": "2024.09",
-      "무게": "170g",
-      "칩셋": "Apple A18",
-      "카메라": "48MP"
+      "모델명": "SM-R630N",
+      "출시일": "2024.07",
+      "타입": "커널형",
+      "컬러": "블랙, 화이트",
+      "배터리 용량": "51/515mAh",
+      "스피커": "Enhanced 2 way",
+      "노이즈캔슬링(ANC)": "지원",
+      "재생시간": "5/28시간(ANC On)\n6/30시간(ANC Off)",
+      "블루투스": "v5.4",
+      "무게": "이어버드 5.4g\n케이스 46.5g"
     }
   }
 ]

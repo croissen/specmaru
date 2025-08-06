@@ -41,9 +41,14 @@ function Home() {
     },
     {
       id1: 'airpodsPro2',
-      id2: 'galaxyBuds3',
-      title: '에어팟 프로 vs 갤럭시 버즈 비교',
+      id2: 'galaxyBuds3Pro',
+      title: '에어팟 프로2 vs 갤럭시 버즈3 프로 비교',
     },
+    {
+      id1: 'galaxyBook5Pro',
+      id2: 'macBookAir13',
+      title: '갤럭시북5 프로 vs 맥북 에어 13 비교',
+    }
   ];
 
 const filteredProducts = allProducts.filter(product => {
@@ -66,7 +71,10 @@ const filteredProducts = allProducts.filter(product => {
 
   return (
     <S.Container>
-      <h1>스마트하게 비교하고 사자! 스펙마루</h1>
+      <S.Title>
+        <S.TitleFont>스마트하게 비교하고 사자!</S.TitleFont>
+        <S.TitleFont>스펙마루</S.TitleFont>
+      </S.Title>
 
       <S.Tabs>
         <S.Tab active={activeTab === 'all'} onClick={() => setActiveTab('all')}>
@@ -103,9 +111,19 @@ const filteredProducts = allProducts.filter(product => {
                 style={{ cursor: 'pointer' }}
               >
                 <S.ExampleImages>
-                  {p1?.image && <img src={p1.image} alt={p1.name} />}
+                  {p1?.image && (
+                    <img
+                      src={Array.isArray(p1.image) ? p1.image[0] : p1.image}
+                      alt={p1.name}
+                    />
+                  )}
                   <span>vs</span>
-                  {p2?.image && <img src={p2.image} alt={p2.name} />}
+                  {p2?.image && (
+                    <img
+                      src={Array.isArray(p2.image) ? p2.image[0] : p2.image}
+                      alt={p2.name}
+                    />
+                  )}
                 </S.ExampleImages>
                 <S.ComparisonTitle>{title}</S.ComparisonTitle>
               </S.ExampleComparisonCard>
@@ -124,7 +142,10 @@ const filteredProducts = allProducts.filter(product => {
               title="상세 페이지로 이동"
             >
               {product.image && (
-                <S.ProductImage src={product.image} alt={product.name} />
+                <S.ProductImage
+                  src={Array.isArray(product.image) ? product.image[0] : product.image}
+                  alt={product.name}
+                />
               )}
               <h3>{product.name}</h3>
               {product.description && <p>{product.description}</p>}

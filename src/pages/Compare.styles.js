@@ -17,7 +17,8 @@ export const BackButton = styled.button`
   padding: 0;
 
   &:hover {
-    text-decoration: underline;
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
   }
 `;
 
@@ -37,7 +38,7 @@ export const CompareTable = styled.table`
 
   th:first-child,
   td:first-child {
-    width: 30%;
+    width: 20%;
     font-weight: bold;
     background-color: #f9f9f9;
   }
@@ -53,8 +54,8 @@ export const CompareTable = styled.table`
 export const ProductImage = styled.img`
   display: block;
   max-width: 100%;
-  max-height: 150px;
-  margin: 8px 0;
+  max-height: 240px;
+  margin: 8px auto;
   object-fit: contain;
 `;
 
@@ -63,7 +64,7 @@ export const BuyButton = styled.button`
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 8px 14px;
+  padding: 8px 10px;
   font-size: 14px;
   border-radius: 4px;
   cursor: pointer;
@@ -183,4 +184,9 @@ export const TitleDiv = styled.div`
   min-height: 50px; 
   display:flex;
   justify-content: space-between;
+`;
+export const CoupangMent = styled.div`
+  margin-top: 50px;
+  font-size: 12px;
+  text-align: center;
 `;

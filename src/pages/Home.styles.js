@@ -10,12 +10,29 @@ export const Container = styled.div`
 
 export const Tabs = styled.div`
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 0.5rem;
   margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ✅ PC 화면에서는 가운데 정렬 */
+  @media (min-width: 600px) {
+    justify-content: center;
+  }
+
+  /* ✅ 모바일에서는 왼쪽 정렬 (기본) */
+  justify-content: flex-start;
 `;
 
 export const Tab = styled.button`
+  flex: 0 0 auto;
   padding: 0.6rem 1.2rem;
   background-color: ${({ active }) => (active ? '#0070f3' : '#eee')};
   color: ${({ active }) => (active ? '#fff' : '#333')};
@@ -24,6 +41,7 @@ export const Tab = styled.button`
   cursor: pointer;
   font-weight: 600;
   font-size: 1rem;
+  white-space: nowrap; /* ✅ 줄바꿈 방지 */
   transition: background-color 0.3s;
 
   &:hover {
@@ -139,4 +157,22 @@ export const ComparisonTitle = styled.p`
   font-weight: 500;
   margin-top: 0.5rem;
   text-align: center;
+`;
+export const Title = styled.div`
+  display: flex;
+  flex-direction: row; /* 기본값: 한 줄 */
+  justify-content: center;
+  flex-wrap: wrap; /* 혹시 너무 길어질 경우 대비 */
+  gap: 10px;
+  @media (max-width: 600px) {
+    flex-direction: column; 
+    gap: 0;
+  }
+`;
+export const TitleFont = styled.p`
+  font-size: 32px;
+  font-weight: bold;
+  @media (max-width: 600px) {
+    margin-top: -10px;
+  }
 `;

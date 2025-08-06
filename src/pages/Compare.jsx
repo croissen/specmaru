@@ -104,11 +104,11 @@ function Compare() {
         const selectedProduct = searchResults[selectedIndex];
 
         if (searchTarget === 'right' && product1 && selectedProduct.category !== product1.category) {
-          alert(`비교하려는 제품은 "${product1.category}" 제품군이어야 합니다.`);
+          alert(`비교하려는 제품은 동일한 종류여야 합니다.`);
           return;
         }
         if (searchTarget === 'left' && product2 && selectedProduct.category !== product2.category) {
-          alert(`비교하려는 제품은 "${product2.category}" 제품군이어야 합니다.`);
+          alert(`비교하려는 제품은 동일한 종류여야 합니다.`);
           return;
         }
 
@@ -153,7 +153,10 @@ function Compare() {
                       -
                     </S.MinusBtn>
                   </S.TitleDiv>
-                  <S.ProductImage src={product1.image} alt={product1.name} />
+                  <S.ProductImage
+                    src={Array.isArray(product1.image) ? product1.image[0] : product1.image}
+                    alt={product1.name}
+                  />
                   {product1.buyLink && (
                     <S.BuyButton onClick={() => window.open(product1.buyLink, '_blank')}>
                       구매하러 가기
@@ -190,7 +193,7 @@ function Compare() {
                           }}
                           onClick={() => {
                             if (product2 && p.category !== product2.category) {
-                              alert(`비교하려는 제품은 "${product2.category}" 제품군이어야 합니다.`);
+                              alert(`비교하려는 제품은 동일한 종류여야 합니다.`);
                               return;
                             }
                             setProduct1(p);
@@ -225,7 +228,10 @@ function Compare() {
                       -
                     </S.MinusBtn>
                   </S.TitleDiv>
-                  <S.ProductImage src={product2.image} alt={product2.name} />
+                  <S.ProductImage
+                    src={Array.isArray(product2.image) ? product2.image[0] : product2.image}
+                    alt={product2.name}
+                  />
                   {product2.buyLink && (
                     <S.BuyButton onClick={() => window.open(product2.buyLink, '_blank')}>
                       구매하러 가기
@@ -262,7 +268,7 @@ function Compare() {
                           }}
                           onClick={() => {
                             if (product1 && p.category !== product1.category) {
-                              alert(`비교하려는 제품은 "${product1.category}" 제품군이어야 합니다.`);
+                              alert(`비교하려는 제품은 동일한 종류여야 합니다.`);
                               return;
                             }
                             setProduct2(p);
@@ -286,14 +292,32 @@ function Compare() {
           {allSpecKeys.map(key => (
             <tr key={key}>
               <td>{key}</td>
-              <td>{product1?.specs?.[key] || '-'}</td>
-              <td>{product2?.specs?.[key] || '-'}</td>
+              <td>
+                {product1?.specs?.[key]
+                  ? product1.specs[key].split('\n').map((line, i) => (
+                      <React.Fragment key={i}>
+                        {line}
+                        <br />
+                      </React.Fragment>
+                    ))
+                  : '-'}
+              </td>
+              <td>
+                {product2?.specs?.[key]
+                  ? product2.specs[key].split('\n').map((line, i) => (
+                      <React.Fragment key={i}>
+                        {line}
+                        <br />
+                      </React.Fragment>
+                    ))
+                  : '-'}
+              </td>
             </tr>
           ))}
         </tbody>
       </S.CompareTable>
 
-      <h5>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</h5>
+      <S.CoupangMent>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</S.CoupangMent>
     </S.Container>
   );
 }
