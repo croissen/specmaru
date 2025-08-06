@@ -36,8 +36,8 @@ function Home() {
   const exampleComparisons = [
     {
       id1: 'iphone16',
-      id2: 'galaxyS25Ultra',
-      title: '아이폰 16 vs 갤럭시 S25 울트라비교',
+      id2: 'galaxyS25',
+      title: '아이폰 16 vs 갤럭시 S25비교',
     },
     {
       id1: 'airpodsPro2',
