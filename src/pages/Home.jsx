@@ -155,6 +155,13 @@ const filteredProducts = allProducts.filter(product => {
           <S.NoResult>검색 결과가 없습니다.</S.NoResult>
         )}
       </S.ProductList>
+
+      <S.ScrollTopButton
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        title="맨 위로 이동"
+      >
+        ⬆ 맨 위로
+      </S.ScrollTopButton>
     </S.Container>
   );
 }

@@ -7,48 +7,67 @@
     "specs": {
       "모델명": "A3287",
       "출시일": "2024.09",
-      "무게": "170g",
-      "칩셋": "Apple A18",
-      "카메라": "48MP"
+      "무게": "1.22kg",
+      "칩셋": "Apple M3",
+      "디스플레이": "13.3인치 Retina, 2560x1664",
+      "메모리": "8GB / 16GB / 24GB 통합 메모리",
+      "저장장치": "256GB / 512GB / 1TB / 2TB SSD",
+      "운영체제": "macOS Sonoma",
+      "배터리": "최대 18시간 비디오 재생",
+      "무선연결": "Wi-Fi 6E, Bluetooth 5.3",
+      "포트": "2 x Thunderbolt 4 (USB-C), 3.5mm 헤드폰잭",
+      "카메라": "1080p FaceTime HD",
+      "가격대": "약 130만원~270만원"
     }
   },
   {
     "id": "lgGram",
     "name": "LG 그램",
-    "description": "LG의 가벼운 노트북, Intel i7, 16GB RAM, 512GB SSD",
-    "specs": {
-      "CPU": "Intel Core i7",
-      "RAM": "16GB",
-      "Storage": "512GB SSD",
-      "Display": "16인치 IPS",
-      "Weight": "1.19kg",
-      "Battery": "22시간"
-    }
-  },
-  {
-    "id": "asusZenbook",
-    "name": "ASUS Zenbook",
-    "description": "ASUS 프리미엄 울트라북, Intel i5, 8GB RAM, 256GB SSD",
-    "specs": {
-      "CPU": "Intel Core i5",
-      "RAM": "8GB",
-      "Storage": "256GB SSD",
-      "Display": "14인치 OLED",
-      "Weight": "1.3kg",
-      "Battery": "15시간"
-    }
-  },
-  {
-    "id": "galaxyBook5Pro",
-    "name": "갤럭시북5 프로",
-    "buyLink": "https://link.coupang.com/a/cIVg6S",
-    "image": "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0245/55d4d804de54c11cd0dc82c863914de3cd9a00887e1e7899e8a088969a6c.jpg",
+    "buyLink": "https://link.coupang.com/a/cIVkD9",
+    "image": "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/ee873829-47ab-4b91-8ed8-9886025626f9.jpg",
     "specs": {
       "모델명": "A3287",
       "출시일": "2024.09",
       "무게": "170g",
       "칩셋": "Apple A18",
       "카메라": "48MP"
+    }
+  },
+  {
+    "id": "asusZenbook",
+    "name": "ASUS Zenbook",
+    "buyLink": "https://link.coupang.com/a/cIVkD9",
+    "image": "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/ee873829-47ab-4b91-8ed8-9886025626f9.jpg",
+    "specs": {
+      "모델명": "A3287",
+      "출시일": "2024.09",
+      "무게": "170g",
+      "칩셋": "Apple A18",
+      "카메라": "48MP"
+    }
+  },
+  {
+    "id": "galaxyBook5Pro",
+    "name": "갤럭시북5 프로",
+    "buyLink": "https://link.coupang.com/a/cIVg6S",
+    "image": 
+    [
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/adcd/0d14a0541c8978c95bb4e024d4121ea3c8c973d3e9651a71dc86811a6c05.jpg",
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/dcf8/8ab7e1e816d49d479e01418044c646f46532814bd6332e7694b06007f347.jpg"
+    ],
+    "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-S9310",
+      "출시일": "2025.02",
+      "운영체제": "윈도우11홈",
+      "컬러": "그레이, 실버",
+      "저장용량": "256GB, 512GB, 1TB, 2TB",
+      "디스플레이": "35.6cm(14in) AMOLED 패널\n해상도: 2880x1800(WQXGA+), 120Hz, 16:10 화면비율",
+      "무게": "1.56kg",
+      "칩": "CPU: Intel Core Ultra 5 226V (8코어: 4P + 4E, 최대 4.5GHz)\nNPU: Intel AI Boost(40TOPS)\nGPU: Intel Arc 130V",
+      "RAM": "16GB LPDDR5X(온보드)",
+      "공식가격": "256GB: 2,218,000원\n512GB: 2,318,000원\n1TB: 2,418,000원\n2TB: 2,518,000원",
+      "쿠팡가격": "256GB: 1,795,000원\n512GB: 1,799,000원\n1TB: 1,999,000원\n2TB: 2,299,000원"
     }
   }
 ]

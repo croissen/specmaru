@@ -182,3 +182,25 @@ export const NoResult = styled.p`
   font-size: 18px;
   color: #666;
 `;
+export const ScrollTopButton = styled.button`
+  position: fixed;
+  bottom: 55px;
+  right: 20px;
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #40a9ff;
+  }
+  @media (min-width: 1024px) {
+    right: 300px;
+  }
+`;
