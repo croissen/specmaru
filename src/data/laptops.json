@@ -3,47 +3,28 @@
     "id": "macBookAir13",
     "name": "맥북 에어 13",
     "buyLink": "https://link.coupang.com/a/cIVkD9",
-    "image": "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/ee873829-47ab-4b91-8ed8-9886025626f9.jpg",
+    "image": 
+    [
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/ee873829-47ab-4b91-8ed8-9886025626f9.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/34d10407-c950-45b9-bb3c-c18b6f108cc9.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/3/56741143-75e4-4acf-8207-127ad55adef8.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/9/beefb0e3-c491-413f-9769-eceecc6fcf30.jpg"
+    ],
     "specs": {
-      "모델명": "A3287",
-      "출시일": "2024.09",
-      "무게": "1.22kg",
-      "칩셋": "Apple M3",
-      "디스플레이": "13.3인치 Retina, 2560x1664",
-      "메모리": "8GB / 16GB / 24GB 통합 메모리",
-      "저장장치": "256GB / 512GB / 1TB / 2TB SSD",
-      "운영체제": "macOS Sonoma",
-      "배터리": "최대 18시간 비디오 재생",
-      "무선연결": "Wi-Fi 6E, Bluetooth 5.3",
-      "포트": "2 x Thunderbolt 4 (USB-C), 3.5mm 헤드폰잭",
-      "카메라": "1080p FaceTime HD",
-      "가격대": "약 130만원~270만원"
-    }
-  },
-  {
-    "id": "lgGram",
-    "name": "LG 그램",
-    "buyLink": "https://link.coupang.com/a/cIVkD9",
-    "image": "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/ee873829-47ab-4b91-8ed8-9886025626f9.jpg",
-    "specs": {
-      "모델명": "A3287",
-      "출시일": "2024.09",
-      "무게": "170g",
-      "칩셋": "Apple A18",
-      "카메라": "48MP"
-    }
-  },
-  {
-    "id": "asusZenbook",
-    "name": "ASUS Zenbook",
-    "buyLink": "https://link.coupang.com/a/cIVkD9",
-    "image": "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/ee873829-47ab-4b91-8ed8-9886025626f9.jpg",
-    "specs": {
-      "모델명": "A3287",
-      "출시일": "2024.09",
-      "무게": "170g",
-      "칩셋": "Apple A18",
-      "카메라": "48MP"
+      "제조사": "애플 Apple",
+      "모델명": "MW133KH/A",
+      "출시일": "2024.03",
+      "운영체제": "macOS Sequoia (15.6)",
+      "컬러": "실버, 스타라이트, 스카이블루, 미드나이트",
+      "저장용량": "256GB, 512GB, 1TB, 2TB",
+      "배터리":"53.8 Wh",
+      "디스플레이": "34.5cm(13.6in) Liquid Retina\n해상도: QHD+ (2560x1664)\n16:10, 주사율 120Hz",
+      "크기":"304.1 x 215.0 x 11.3 mm",
+      "무게": "1.24kg",
+      "칩": "CPU: Apple M4 (10코어)\nGPU: 8코어 or 10코어 통합 GPU\nNPU: 16코어 Neural Engine",
+      "RAM": "16GB / 24GB / 32GB 통합메모리",
+      "공식가격": "256GB: 1,590,000원\n512GB: 1,890,000원\n1TB: 2,335,680원\n2TB: 3,235,680원",
+      "쿠팡가격": "256GB: 1,458,000원\n512GB: 1,735,680원\n1TB: 2,335,680원\n2TB: 3,235,680원"
     }
   },
   {
@@ -57,15 +38,17 @@
     ],
     "specs": {
       "제조사": "삼성 Samsung",
-      "모델명": "SM-S9310",
-      "출시일": "2025.02",
+      "모델명": "NT940XHA-K51AG",
+      "출시일": "2025.01",
       "운영체제": "윈도우11홈",
       "컬러": "그레이, 실버",
       "저장용량": "256GB, 512GB, 1TB, 2TB",
-      "디스플레이": "35.6cm(14in) AMOLED 패널\n해상도: 2880x1800(WQXGA+), 120Hz, 16:10 화면비율",
-      "무게": "1.56kg",
-      "칩": "CPU: Intel Core Ultra 5 226V (8코어: 4P + 4E, 최대 4.5GHz)\nNPU: Intel AI Boost(40TOPS)\nGPU: Intel Arc 130V",
-      "RAM": "16GB LPDDR5X(온보드)",
+      "배터리":"63 Wh",
+      "디스플레이": "35.6cm(14in) AMOLED\n해상도: WQXGA+ (2880x1800)\n16:10, 주사율 120Hz",
+      "크기":"312.3 x 223.8 x 11.6 mm",
+      "무게": "1.23kg",
+      "칩": "CPU: Intel Core Ultra 5 226V (8코어)\nGPU: Intel Arc 130V(8GB)\nNPU: Intel AI Boost(40TOPS)",
+      "RAM": "16GB / 32GB LPDDR5X",
       "공식가격": "256GB: 2,218,000원\n512GB: 2,318,000원\n1TB: 2,418,000원\n2TB: 2,518,000원",
       "쿠팡가격": "256GB: 1,795,000원\n512GB: 1,799,000원\n1TB: 1,999,000원\n2TB: 2,299,000원"
     }
