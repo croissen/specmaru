@@ -146,17 +146,18 @@ function Compare() {
                 <>
                   <S.TitleDiv style={{ height: titleHeight }} ref={leftTitleRef} onClick={() => navigate(`/product/${product1.id}`)}>
                     {product1.name}
-                    <S.MinusBtn
-                      onClick={() => {
-                        setProduct1(null);
-                        setSearchTarget('left');
-                        setSearchTerm('');
-                        setSearchResults([]);
-                      }}
-                      title="선택 해제"
-                    >
-                      -
-                    </S.MinusBtn>
+                      <S.MinusBtn
+                        onClick={(e) => {
+                          e.stopPropagation(); // <-- 클릭 이벤트가 TitleDiv로 안 올라가게 막음
+                          setProduct1(null);
+                          setSearchTarget('left');
+                          setSearchTerm('');
+                          setSearchResults([]);
+                        }}
+                        title="선택 해제"
+                      >
+                        -
+                      </S.MinusBtn>
                   </S.TitleDiv>
                   <S.ProductImage
                     src={Array.isArray(product1.image) ? product1.image[0] : product1.image}
@@ -223,7 +224,8 @@ function Compare() {
                   <S.TitleDiv style={{ height: titleHeight }} ref={rightTitleRef} onClick={() => navigate(`/product/${product2.id}`)}>
                     {product2.name}
                     <S.MinusBtn
-                      onClick={() => {
+                      onClick={(e) => {
+                        e.stopPropagation(); // ← 클릭 이벤트 상위 전파 차단
                         setProduct2(null);
                         setSearchTarget('right');
                         setSearchTerm('');
@@ -323,6 +325,13 @@ function Compare() {
           ))}
         </tbody>
       </S.CompareTable>
+
+      <S.ScrollTopButton
+      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+      title="맨 위로 이동"
+    >
+      ⬆ 맨 위로
+    </S.ScrollTopButton>
 
       <S.CoupangMent>이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</S.CoupangMent>
     </S.Container>
