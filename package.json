@@ -23,7 +23,7 @@
     "deploy": "gh-pages -d build",
     "push-deploy": "npm run deploy && git add . && git commit -m \"Deploy\" && git push"
   },
-  "homepage": "https://croissen.github.io/specmaru",
+  "homepage": "https://specmaru.com",
   "eslintConfig": {
     "extends": [
       "react-app",
