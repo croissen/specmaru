@@ -12,6 +12,8 @@ function Home() {
   const [activeTab, setActiveTab] = useState('all');
   const [allProducts, setAllProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 10;
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -34,40 +36,33 @@ function Home() {
   }, []);
 
   const exampleComparisons = [
-    {
-      id1: 'iphone16',
-      id2: 'galaxyS25',
-      title: '아이폰 16 vs 갤럭시 S25비교',
-    },
-    {
-      id1: 'airpodsPro2',
-      id2: 'galaxyBuds3Pro',
-      title: '에어팟 프로2 vs 갤럭시 버즈3 프로 비교',
-    },
-    {
-      id1: 'galaxyBook5Pro',
-      id2: 'macBookAir13',
-      title: '갤럭시북5 프로 vs 맥북 에어 13 비교',
-    }
+    { id1: 'iphone16', id2: 'galaxyS25', title: '아이폰 16 vs 갤럭시 S25 비교' },
+    { id1: 'airpodsPro2', id2: 'galaxyBuds3Pro', title: '에어팟 프로2 vs 갤럭시 버즈3 프로 비교' },
+    { id1: 'galaxyBook5Pro', id2: 'macBookAir13', title: '갤럭시북5 프로 vs 맥북 에어 13 비교' }
   ];
 
-const filteredProducts = allProducts.filter(product => {
-  const matchesCategory = activeTab === 'all' ? true : product.category === activeTab;
+  const filteredProducts = allProducts
+    .filter(product => {
+      const matchesCategory = activeTab === 'all' ? true : product.category === activeTab;
+      const lowerSearch = searchTerm.toLowerCase();
+      const nameMatch = (product.name?.toLowerCase() || '').includes(lowerSearch);
+      const specsString = product.specs
+        ? Object.values(product.specs).join(' ').toLowerCase()
+        : '';
+      const specsMatch = specsString.includes(lowerSearch);
+      return matchesCategory && (nameMatch || specsMatch);
+    })
+    .sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ko')); // ✅ 가나다 순 정렬
 
-  const lowerSearch = searchTerm.toLowerCase();
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = filteredProducts.slice(indexOfFirstItem, indexOfLastItem);
+  const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
 
-  // 이름에서 검색
-  const nameMatch = (product.name?.toLowerCase() || '').includes(lowerSearch);
-
-  // specs 값 전체 합쳐서 검색
-  const specsString = product.specs
-    ? Object.values(product.specs).join(' ').toLowerCase()
-    : '';
-
-  const specsMatch = specsString.includes(lowerSearch);
-
-  return matchesCategory && (nameMatch || specsMatch);
-});
+  const goToPage = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   return (
     <S.Container>
@@ -77,14 +72,14 @@ const filteredProducts = allProducts.filter(product => {
       </S.Title>
 
       <S.Tabs>
-        <S.Tab active={activeTab === 'all'} onClick={() => setActiveTab('all')}>
+        <S.Tab active={activeTab === 'all'} onClick={() => { setActiveTab('all'); setCurrentPage(1); }}>
           홈
         </S.Tab>
         {tabs.map(tab => (
           <S.Tab
             key={tab.id}
             active={activeTab === tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => { setActiveTab(tab.id); setCurrentPage(1); }}
           >
             {tab.name}
           </S.Tab>
@@ -95,7 +90,7 @@ const filteredProducts = allProducts.filter(product => {
         type="text"
         placeholder="제품명 또는 키워드 검색"
         value={searchTerm}
-        onChange={e => setSearchTerm(e.target.value)}
+        onChange={e => { setSearchTerm(e.target.value); setCurrentPage(1); }}
       />
 
       {activeTab === 'all' && searchTerm.trim() === '' && (
@@ -133,8 +128,8 @@ const filteredProducts = allProducts.filter(product => {
       )}
 
       <S.ProductList>
-        {filteredProducts.length > 0 ? (
-          filteredProducts.map(product => (
+        {currentItems.length > 0 ? (
+          currentItems.map(product => (
             <S.ProductCard
               key={product.id}
               onClick={() => navigate(`/product/${product.id}`)}
@@ -156,12 +151,45 @@ const filteredProducts = allProducts.filter(product => {
         )}
       </S.ProductList>
 
+      {totalPages > 1 && (
+        <div style={{ textAlign: 'center', margin: '20px 0' }}>
+          {Array.from({ length: totalPages }, (_, i) => (
+            <button
+              key={i + 1}
+              onClick={() => goToPage(i + 1)}
+              style={{
+                margin: '0 5px',
+                padding: '5px 10px',
+                backgroundColor: currentPage === i + 1 ? '#0073e6' : '#fff',
+                color: currentPage === i + 1 ? '#fff' : '#000',
+                border: '1px solid #ccc',
+                borderRadius: '4px',
+                cursor: 'pointer'
+              }}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </div>
+      )}
+
       <S.ScrollTopButton
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         title="맨 위로 이동"
       >
         ⬆ 맨 위로
       </S.ScrollTopButton>
+
+      <footer style={{ textAlign: 'center', padding: '20px', fontSize: '14px' }}>
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSchAA0vaJQtxPO1KyGBkQqEJx4S3yAHAok1-FW0Jv33eqUYQw/viewform?usp=dialog"
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ color: '#0073e6', textDecoration: 'none' }}
+        >
+          💬 의견 보내기
+        </a>
+      </footer>
     </S.Container>
   );
 }

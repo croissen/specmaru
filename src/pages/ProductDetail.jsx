@@ -111,6 +111,7 @@ function ImageSlider({ images }) {
         alt={`이미지 ${current + 1}`} 
       />
       {imgs.length > 1 && <S.Arrow onClick={handleNext}>▶</S.Arrow>}
+      
     </S.ImageSliderWrapper>
   );
 }

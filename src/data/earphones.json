@@ -1,5 +1,84 @@
 [
   {
+    "id": "airpodsMax",
+    "name": "에어팟 맥스",
+    "buyLink": "https://link.coupang.com/a/cJnZV4",
+    "image": 
+    [
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/3377/0f93dc90a27696a95eca36a78f87d4fb7d0a2856dd36ac4f56b084ab6e43.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/970c/b97907881c153592b7fed21971a58cddc82e47a1ceb244876fb7af85097d.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2024/09/10/8/9/69105855-5c26-49a6-827d-86b2efab8e58.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/ef68/2cce204525ec6f4a20553498772bd98522d8b865936b8106b91b56a8c4f6.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/b181/5419cb24203486e2c08d3663a0dffad5642a5a70f64dc0a7960d910483bc.jpg"
+    ],
+      "specs": {
+      "제조사": "애플 Apple",
+      "모델명": "A3184",
+      "출시일": "2024.9",
+      "타입": "헤드폰",
+      "컬러": "미드나이트, 블루, 스타라이트, 오렌지, 퍼플",
+      "드라이버": "Apple Custom Dynamic 드라이버",
+      "노이즈캔슬링(ANC)": "O 프로급 액티브 노이즈 캔슬링",
+      "배터리": "664 mAh",
+      "재생시간": "유닛 5시간\n케이스 30시간",
+      "크기":"168.6 x 187.3 x 83.4 mm",
+      "무게": "386.2g",
+      "마이크":"9개",
+      "블루투스": "Bluetooth 5.0",
+      "방수등급": "IP54",
+      "공식가격": "769,000원",
+      "쿠팡가격": "705,950원"
+    }
+  },
+  {
+    "id": "airpods4ANC",
+    "name": "에어팟 4세대(ANC)",
+    "buyLink": "https://link.coupang.com/a/cJnWms",
+    "image": "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/81d4/f1710ef0f21e8d2fdf39942bdaae12c473182d2da15b0436a973b54a6661.jpg",
+    "specs": {
+      "제조사": "애플 Apple",
+      "모델명": "A3055, A3056, A3059",
+      "출시일": "2024.10",
+      "타입": "커널형",
+      "컬러": "화이트",
+      "드라이버": "Custom high-excursion Apple 드라이버",
+      "노이즈캔슬링(ANC)": "O 액티브 노이즈 캔슬링",
+      "배터리": "유닛 25mAh\n케이스 398mAh",
+      "재생시간": "유닛 5시간\n케이스 30시간",
+      "크기":"유닛 30.2 x 18.3 x 18.1 mm\n케이스 46.2 x 50.1 x 21.2 mm",
+      "무게": "유닛 4.3g\n케이스 34.7g",
+      "마이크":"유닛당 3개",
+      "블루투스": "Bluetooth 5.3",
+      "방수등급": "IP54",
+      "공식가격": "269,000원",
+      "쿠팡가격": "242,100원"
+    }
+  },
+  {
+    "id": "airpods4",
+    "name": "에어팟 4세대",
+    "buyLink": "https://link.coupang.com/a/cJnP1d",
+    "image": "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/81d4/f1710ef0f21e8d2fdf39942bdaae12c473182d2da15b0436a973b54a6661.jpg",
+    "specs": {
+      "제조사": "애플 Apple",
+      "모델명": "A3050, A3053, A3058",
+      "출시일": "2024.10",
+      "타입": "커널형",
+      "컬러": "화이트",
+      "드라이버": "Custom high-excursion Apple 드라이버",
+      "노이즈캔슬링(ANC)": "X",
+      "배터리": "유닛 25mAh\n케이스 398mAh",
+      "재생시간": "유닛 5시간\n케이스 30시간",
+      "크기":"유닛 30.2 x 18.3 x 18.1 mm\n케이스 46.2 x 50.1 x 21.2 mm",
+      "무게": "유닛 4.3g\n케이스 32.3g",
+      "마이크":"유닛당 3개",
+      "블루투스": "Bluetooth 5.3",
+      "방수등급": "미지원",
+      "공식가격": "199,000원",
+      "쿠팡가격": "159,000원"
+    }
+  },
+  {
     "id": "airpodsPro2",
     "name": "에어팟 프로 2세대",
     "buyLink": "https://link.coupang.com/a/cIMDkn",
@@ -20,7 +99,7 @@
       "블루투스": "Bluetooth 5.3",
       "방수등급": "IPX4",
       "공식가격": "359,000원",
-      "쿠팡가격": "305,460원"
+      "쿠팡가격": "299,260원"
     }
   },
   {
@@ -37,7 +116,7 @@
       "출시일": "2024.07",
       "타입": "커널형",
       "컬러": "화이트, 실버",
-      "드라이버": "듀얼 앰프, 2-Way 스피커",
+      "드라이버": "2-Way 스피커",
       "노이즈캔슬링(ANC)": "향상된 저음 노이즈 캔슬링",
       "배터리": "유닛 53mAh\n케이스 515mAh",
       "재생시간": "유닛 6시간\n케이스 30시간",
@@ -47,7 +126,34 @@
       "블루투스": "Bluetooth 5.4",
       "방수등급": "IPX7",
       "공식가격": "319,000원",
-      "쿠팡가격": "203,500원"
+      "쿠팡가격": "196,500원"
+    }
+  },
+  {
+    "id": "galaxyBuds3",
+    "name": "갤럭시 버즈3",
+    "buyLink": "https://link.coupang.com/a/cJn2LO",
+    "image": [
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/681e/acc2e7bc3dd9916173a29c58f2f86fce073c01ed39fcbaeedcca71bcaec7.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/38dd/2cef9ca6f5fc8e95f26f2b0d96deb5a4654e00d663de7989a4ef8d1c45f5.jpg"
+      ],
+    "specs": {
+      "제조사": "삼성전자 Samsung",
+      "모델명": "SM-R530N",
+      "출시일": "2024.07",
+      "타입": "오픈형",
+      "컬러": "화이트, 실버",
+      "드라이버": "1-Way 스피커",
+      "노이즈캔슬링(ANC)": "O 액티브 노이즈 캔슬링",
+      "배터리": "유닛 48mAh\n케이스 515mAh",
+      "재생시간": "유닛 6시간\n케이스 30시간",
+      "크기":"유닛 18.1 x 20.4 x 31.9 mm\n케이스 48.7 x 58.9 x 24.4 mm",
+      "무게": "유닛 4.7g\n케이스 46.5g",
+      "마이크":"유닛당 3개",
+      "블루투스": "Bluetooth 5.4",
+      "방수등급": "IP57",
+      "공식가격": "219,000원",
+      "쿠팡가격": "108,900원"
     }
   },
   {
