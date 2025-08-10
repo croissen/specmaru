@@ -45,7 +45,7 @@
       "저장용량":"128GB, 256GB, 512GB",
       "디스플레이":"15.5cm(6.1in) OLED\n해상도: FHD+ (2556 x 1179)\n최대밝기 2000니트/주사율 60Hz",
       "크기":"71.6 x 147.6 x 7.8 mm",
-      "무게":"170g",
+      "무게":"171g",
       "칩": "AP: Apple A16\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (5코어)\nRAM: 6GB",
       "카메라": "광각48MP F1.6\n전면 12MP F1.9",
       "배터리":"3,349 mAh",
@@ -85,30 +85,30 @@
   {
     "id": "iphone15Plus",
     "name": "아이폰 15+",
-    "buyLink": "https://link.coupang.com/a/cI8i3n",
+    "buyLink": "https://link.coupang.com/a/cJP73S",
     "image": 
     [
-      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1059925168582730-31ca7a7d-607d-4514-9735-f34228c6509e.jpg",
-      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1068427499971725-777aaedb-c0ae-4729-afc7-c2f9d8ddddb7.jpg",
-      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/138992441209597-0cfd396b-9cda-4bf9-9b17-1dc8aea2ab3c.jpg",
-      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/138993627507969-1a5f1204-b17a-40d9-8e87-05739743839b.jpg",
-      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1059922619536670-458d1765-ab0d-43f8-8ba8-5f3113401954.jpg"
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/ce47/0bc7f22d1d3c9eed9314e2dded9efefd5f161036713425174e6ea26e2fe5.jpg",
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/7be5/46372cdb61fdf258629b8acd338a47fc1d5dd5b8b351b281a3f39df612f8.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/5200/6a184b6ceec93110965f538982811c823aa7e49ff63a5d8642e8e3604916.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/6003/dad4355fef5f68fc2716f3465b6eb7f6bcfa2bddb95d14b7daf6c69cff79.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0761/9467332e26a42ded49ccca6bf152b8388bfe63720b0eeee9bba181f10b3a.jpg"
     ],
     "specs": {
       "제조사": "애플 Apple",
-      "모델명": "A3290",
-      "출시일": "2024.09",
-      "운영체제":"iOS 18",
+      "모델명": "A3094",
+      "출시일": "2023.10",
+      "운영체제":"iOS 17",
       "컬러":"화이트, 블랙, 울트라마린, 틸, 핑크",
       "저장용량":"128GB, 256GB",
       "디스플레이":"17.0cm(6.7in) OLED\n해상도: FHD+ (2796 x 1290)\n최대밝기 2000니트/주사율 60Hz",
       "크기":"77.8 x 160.9 x 7.8 mm",
-      "무게":"199g",
-      "칩": "AP: Apple A18\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (6코어)\nRAM: 8GB",
+      "무게":"201g",
+      "칩": "AP: Apple A16\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (5코어)\nRAM: 8GB",
       "카메라": "초광각 12MP F2.2\n광각48MP F1.6\n전면 12MP F1.9",
       "배터리":"4,674mAh",
-      "공식가격": "128GB: 1,350,000원\n256GB: 1,500,000원",
-      "쿠팡가격": "128GB: 1,309,500원\n256GB: 1,470,000원"
+      "공식가격": "128GB: 1,250,000원\n256GB: 1,400,000원",
+      "쿠팡가격": "128GB: 1,250,000원\n256GB: 1,400,000원"
     }
   },
   {
