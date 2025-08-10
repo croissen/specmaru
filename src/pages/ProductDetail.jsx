@@ -73,7 +73,7 @@ function ProductDetail() {
       {/* 버튼 영역 */}
       <S.ButtonDiv>
         <S.BuyButton href={product.buyLink} target="_blank" rel="noopener noreferrer">
-          구매하러 가기
+          저렴한 가격보기
         </S.BuyButton>
         <S.CompareButton to={`/compare/${id}`}>스펙 비교하기</S.CompareButton>
       </S.ButtonDiv>

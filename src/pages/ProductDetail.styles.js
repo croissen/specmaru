@@ -45,7 +45,7 @@ export const SpecTable = styled.table`
 
 export const BuyButton = styled.a`
   display: inline-block;
-  padding: 12px 24px;
+  padding: 12px 18px;
   margin-right: 15px;
   background-color: #007bff;
   color: white;
