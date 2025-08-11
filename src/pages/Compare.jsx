@@ -89,6 +89,8 @@ function Compare() {
     ...Object.keys(product2?.specs || {}),
   ]));
 
+  
+
   function handleKeyDown(e) {
     if (searchResults.length === 0) return;
 

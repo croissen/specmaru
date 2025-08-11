@@ -69,6 +69,9 @@ function Home() {
     }
     fetchAllProducts();
   }, []);
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [activeTab]);
 
   /*
   useEffect(() => {
