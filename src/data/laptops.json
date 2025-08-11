@@ -1,5 +1,29 @@
 [
   {
+    "id": "basicBook16",
+    "name": "베이직북 16",
+    "buyLink": "https://link.coupang.com/a/cJWVGU",
+    "image": 
+    [
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/06/17/15/7/f6bca19d-6809-4cf8-8f55-ece08cefd899.jpg"
+    ],
+    "specs": {
+      "제조사": "베이직스(Basic-s)",
+      "모델명": "BB1624FW",
+      "출시일": "2024.11",
+      "운영체제": "Windows 11 Home",
+      "컬러": "화이트",
+      "저장용량": "256GB, 512GB, 1TB, 2TB",
+      "배터리":"5,000mAh",
+      "디스플레이": "40.6cm(16.1in)\n해상도: WUXGA (1920x1200)\n주사율 60Hz",
+      "크기":"344 x 248 x 22 mm",
+      "무게": "1.66kg",
+      "칩": "Intel N95 (4코어)",
+      "RAM": "8GB / 16GB",
+      "공식가격": "256GB: 548,000원\n512GB: 648,000원"
+    }
+  },
+  {
     "id": "macBookAir13",
     "name": "맥북 에어 13",
     "buyLink": "https://link.coupang.com/a/cIVkD9",
@@ -39,7 +63,7 @@
       "제조사": "삼성 Samsung",
       "모델명": "NT940XHA-K51AG",
       "출시일": "2025.01",
-      "운영체제": "윈도우11홈",
+      "운영체제": "Windows 11 Home",
       "컬러": "그레이, 실버",
       "저장용량": "256GB, 512GB, 1TB, 2TB",
       "배터리":"63 Wh",
