@@ -103,7 +103,7 @@
       "무게":"201g",
       "칩": "AP: Apple A16\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (5코어)\nRAM: 6GB",
       "카메라": "초광각 12MP F2.2\n광각48MP F1.6\n전면 12MP F1.9",
-      "배터리":"4,612mAh",
+      "배터리":"4,383mAh",
       "공식가격": "128GB: 1,250,000원\n256GB: 1,400,000원\n512GB: 1,700,000원"
     }
   },
@@ -186,6 +186,33 @@
       "카메라": "초광각 12MP F2.2\n광각48MP F1.6\n망원 12MP F2.8\n전면 12MP F1.9",
       "배터리":"3,582mAh",
       "공식가격": "128GB: 1,550,000원\n256GB: 1,700,000원\n512GB: 1,991,000원\n1TB: 2,300,000원"
+    }
+  },
+  {
+    "id": "iphone15ProMax",
+    "name": "아이폰 15 Pro Max",
+    "buyLink": "https://link.coupang.com/a/cI8uPr",
+    "image": 
+    [
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/51a8/505c96013f56b88d33fc56bcee8197cd325b014f6da1940f2614ea21f90c.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/d364/dac8c23941c9899415027934f557b88c6cc7b1e971a2eaf790f58bc5c0f7.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/4434569639783011-01925bc1-21fd-43ae-8c11-2092bc375e0c.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/2fbc/e036b6336db141bb6a9340680e19c685822524fda6f3bcf68f4d904f69fe.jpg"
+    ],
+    "specs": {
+      "제조사": "애플 Apple",
+      "모델명": "A3102",
+      "출시일": "2023.10 ",
+      "운영체제":"iOS 17",
+      "컬러":"내추럴, 블루, 블랙, 화이트",
+      "저장용량":"128GB, 256GB, 512GB, 1TB",
+      "디스플레이":"15.5cm(6.1in) OLED\n해상도: FHD+ (2556 x 1179)\n최대밝기 2000니트/주사율 120Hz",
+      "크기":"70.6 x 146.6 x 8.25 mm",
+      "무게":"187g",
+      "칩": "AP: Apple A17 Pro \nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (6코어)\nRAM: 8GB",
+      "카메라": "초광각 12MP F2.2\n광각48MP F1.78\n망원 12MP F2.8\n전면 12MP F1.9",
+      "배터리":"3,274 mAh",
+      "공식가격": "128GB: 1,320,000원\n256GB: 1,474,000원\n512GB: 1,980,000원\n1TB: 2,300,000원"
     }
   },
   {
@@ -272,7 +299,7 @@
   },
   {
     "id": "galaxyS25Ultra",
-    "name": "갤럭시S 25 Ultra",
+    "name": "갤럭시 S25 Ultra",
     "buyLink": "https://link.coupang.com/a/cI4peS",
     "image": 
     [

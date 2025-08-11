@@ -204,3 +204,30 @@ export const ScrollTopButton = styled.button`
     right: 300px;
   }
 `;
+export const SubTabs = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 25px 0 25px 0;
+  gap: 30px;
+
+  max-width: 600px;   /* 최대 가로 너비 설정 (필요에 따라 조절) */
+  flex-wrap: wrap;    /* 넘치면 줄바꿈 */
+`;
+
+export const SubTab = styled.button`
+  padding: 8px 16px;
+  background-color: ${({ active }) => (active ? '#0073e6' : '#f0f0f0')};
+  color: ${({ active }) => (active ? '#fff' : '#333')};
+  border: none;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+
+  min-width: 80px;    /* 최소 너비 */
+  text-align: center;
+
+  &:hover {
+    background-color: ${({ active }) => (active ? '#005bb5' : '#d9d9d9')};
+  }
+`;

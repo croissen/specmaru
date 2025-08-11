@@ -6,10 +6,41 @@ const tabs = [
   { id: 'smartphones', name: '📱 스마트폰', file: 'smartphones.json' },
   { id: 'earphones', name: '🎧 이어폰', file: 'earphones.json' },
   { id: 'laptops', name: '💻 노트북', file: 'laptops.json' },
+  // { id: 'homeappliances', name: '🔌 가전제품', file: 'homeappliances.json' }, // 가전제품 추후 추가용
 ];
+
+/*
+const homeApplianceSubTabs = [
+  { id: 'washingMachine', name: '세탁기' },
+  { id: 'dryer', name: '건조기' },
+  { id: 'airConditioner', name: '에어컨' },
+  { id: 'refrigerator', name: '냉장고' },
+  { id: 'TV', name: 'TV' },
+  { id: 'cleaner', name: '청소기' },
+  { id: 'riceCooker', name: '밥솥' },
+  { id: 'airPurifier', name: '공기청정기' },
+  { id: 'dehumidifier', name: '제습기' }
+];
+*/
+
+// 한글/영어, 띄어쓰기 등 변환 및 소문자화 처리 함수
+const normalizeText = (text) => {
+  if (!text) return '';
+  return text
+    .toLowerCase()
+    .replace(/\s+/g, '')       
+    .replace(/프로/g, 'pro')   
+    .replace(/맥스/g, 'max')  
+    .replace(/갤럭시/g, 'galaxy')  
+    .replace(/아이폰/g, 'iphone')
+    .replace(/에어팟/g, 'airpods')
+    .replace(/버즈/g, 'buds')
+    ;  
+};
 
 function Home() {
   const [activeTab, setActiveTab] = useState('all');
+  // const [subCategory, setSubCategory] = useState(null); // 가전 서브카테고리
   const [allProducts, setAllProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
@@ -22,10 +53,14 @@ function Home() {
         const smartData = await import(`../data/smartphones.json`);
         const earphoneData = await import(`../data/earphones.json`);
         const laptopData = await import(`../data/laptops.json`);
+        /*
+        const homeapplianceData = await import(`../data/homeappliances.json`);
+        */
         const combined = [
           ...smartData.default.map(p => ({ ...p, category: 'smartphones' })),
           ...earphoneData.default.map(p => ({ ...p, category: 'earphones' })),
           ...laptopData.default.map(p => ({ ...p, category: 'laptops' })),
+          // ...homeapplianceData.default.map(p => ({ ...p, category: 'homeappliances' })),
         ];
         setAllProducts(combined);
       } catch (err) {
@@ -35,24 +70,42 @@ function Home() {
     fetchAllProducts();
   }, []);
 
+  /*
+  useEffect(() => {
+    if (activeTab === 'homeappliances') {
+      setSubCategory(homeApplianceSubTabs[0].id);
+    } else {
+      setSubCategory(null);
+    }
+    setCurrentPage(1);
+  }, [activeTab]);
+  */
+
   const exampleComparisons = [
     { id1: 'iphone16', id2: 'galaxyS25', title: '아이폰 16 vs 갤럭시 S25 비교' },
     { id1: 'airpodsPro2', id2: 'galaxyBuds3Pro', title: '에어팟 프로2 vs 갤럭시 버즈3 프로 비교' },
-    { id1: 'galaxyBook5Pro', id2: 'macBookAir13', title: '갤럭시북5 프로 vs 맥북 에어 13 비교' }
+    { id1: 'galaxyBook5Pro', id2: 'macBookAir13', title: '갤럭시북5 프로 vs 맥북 에어 13 비교' },
   ];
 
   const filteredProducts = allProducts
     .filter(product => {
       const matchesCategory = activeTab === 'all' ? true : product.category === activeTab;
-      const lowerSearch = searchTerm.toLowerCase();
-      const nameMatch = (product.name?.toLowerCase() || '').includes(lowerSearch);
+
+      const normalizedSearch = normalizeText(searchTerm);
+      const normalizedId = normalizeText(product.id);
+      const normalizedName = normalizeText(product.name);
       const specsString = product.specs
-        ? Object.values(product.specs).join(' ').toLowerCase()
+        ? Object.values(product.specs).join(' ')
         : '';
-      const specsMatch = specsString.includes(lowerSearch);
-      return matchesCategory && (nameMatch || specsMatch);
+      const normalizedSpecs = normalizeText(specsString);
+
+      return matchesCategory && (
+        normalizedId.includes(normalizedSearch) ||
+        normalizedName.includes(normalizedSearch) ||
+        normalizedSpecs.includes(normalizedSearch)
+      );
     })
-    .sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ko')); // ✅ 가나다 순 정렬
+    .sort((a, b) => (a.name || '').localeCompare(b.name || '', 'ko'));
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -72,25 +125,47 @@ function Home() {
       </S.Title>
 
       <S.Tabs>
-        <S.Tab active={activeTab === 'all'} onClick={() => { setActiveTab('all'); setCurrentPage(1); }}>
+        <S.Tab active={activeTab === 'all'} onClick={() => setActiveTab('all')}>
           홈
         </S.Tab>
         {tabs.map(tab => (
           <S.Tab
             key={tab.id}
             active={activeTab === tab.id}
-            onClick={() => { setActiveTab(tab.id); setCurrentPage(1); }}
+            onClick={() => setActiveTab(tab.id)}
           >
             {tab.name}
           </S.Tab>
         ))}
       </S.Tabs>
 
+      {/* 
+      {activeTab === 'homeappliances' && (
+        <S.SubTabs>
+          {homeApplianceSubTabs.map(sub => (
+            <S.SubTab
+              key={sub.id}
+              active={subCategory === sub.id}
+              onClick={() => {
+                setSubCategory(sub.id);
+                setCurrentPage(1);
+              }}
+            >
+              {sub.name}
+            </S.SubTab>
+          ))}
+        </S.SubTabs>
+      )}
+      */}
+
       <S.SearchInput
         type="text"
-        placeholder="제품명 또는 키워드 검색"
+        placeholder="제품명 또는 브랜드 검색"
         value={searchTerm}
-        onChange={e => { setSearchTerm(e.target.value); setCurrentPage(1); }}
+        onChange={e => {
+          setSearchTerm(e.target.value);
+          setCurrentPage(1);
+        }}
       />
 
       {activeTab === 'all' && searchTerm.trim() === '' && (
@@ -164,7 +239,7 @@ function Home() {
                 color: currentPage === i + 1 ? '#fff' : '#000',
                 border: '1px solid #ccc',
                 borderRadius: '4px',
-                cursor: 'pointer'
+                cursor: 'pointer',
               }}
             >
               {i + 1}
