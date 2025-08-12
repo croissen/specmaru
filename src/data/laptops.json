@@ -2,7 +2,7 @@
   {
     "id": "basicBook16",
     "name": "베이직북 16",
-    "buyLink": "https://link.coupang.com/a/cJWVGU",
+    "buyLink": "https://link.coupang.com/a/cJ6moP",
     "image": 
     [
       "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/06/17/15/7/f6bca19d-6809-4cf8-8f55-ece08cefd899.jpg"
@@ -20,7 +20,7 @@
       "무게": "1.66kg",
       "칩": "CPU: Intel N95 (4코어)\nGPU:\nNPU:",
       "RAM": "8GB / 16GB",
-      "가격": "548,000원~"
+      "가격": "494,570원~"
     }
   },
   {
@@ -68,13 +68,13 @@
       "무게": "1.19kg",
       "칩": "CPU: Intel Core Ultra 5\nGPU: Intel Arc\nNPU: Intel AI Boost",
       "RAM": "16GB",
-      "가격": "1,790,000원~"
+      "가격": "1,366,270원~"
     }
   },
   {
     "id": "macBookAir13",
     "name": "맥북 에어 13",
-    "buyLink": "https://link.coupang.com/a/cIVkD9",
+    "buyLink": "https://link.coupang.com/a/cJ6lFK",
     "image": 
     [
       "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/2025/03/11/10/5/ee873829-47ab-4b91-8ed8-9886025626f9.jpg",
@@ -95,7 +95,7 @@
       "무게": "1.24kg",
       "칩": "CPU: Apple M4 (10코어)\nGPU: 8코어 or 10코어 통합 GPU\nNPU: 16코어 Neural Engine",
       "RAM": "16GB / 24GB / 32GB",
-      "가격": "1,590,000원~"
+      "가격": "1,457,990원~"
     }
   },
   {
@@ -120,7 +120,7 @@
       "무게": "1.23kg",
       "칩": "CPU: Intel Core Ultra 5 226V (8코어)\nGPU: Intel Arc 130V(8GB)\nNPU: Intel AI Boost",
       "RAM": "16GB / 32GB",
-      "가격": "2,218,000원~"
+      "가격": "1,699,000원~"
     }
   }
 ]
