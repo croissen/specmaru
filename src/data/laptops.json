@@ -11,16 +11,64 @@
       "제조사": "베이직스(Basic-s)",
       "모델명": "BB1624FW",
       "출시일": "2024.11",
-      "운영체제": "Windows 11 Home",
+      "운영체제": "Windows 11 Pro",
       "컬러": "화이트",
-      "저장용량": "256GB, 512GB, 1TB, 2TB",
-      "배터리":"5,000mAh",
+      "저장용량": "256GB, 512GB",
+      "배터리":"5,000mAh(18.5Wh)",
       "디스플레이": "40.6cm(16.1in)\n해상도: WUXGA (1920x1200)\n주사율 60Hz",
       "크기":"344 x 248 x 22 mm",
       "무게": "1.66kg",
-      "칩": "Intel N95 (4코어)",
+      "칩": "CPU: Intel N95 (4코어)\nGPU:\nNPU:",
       "RAM": "8GB / 16GB",
-      "공식가격": "256GB: 548,000원\n512GB: 648,000원"
+      "가격": "548,000원~"
+    }
+  },
+  {
+    "id": "gram17",
+    "name": "그램 17",
+    "buyLink": "https://link.coupang.com/a/cJ5qYr",
+    "image": 
+    [
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/3301360754138216-ddc5be57-2768-40d7-ad43-51af6b87fd81.jpg"
+    ],
+    "specs": {
+      "제조사": "엘지 LG",
+      "모델명": "17Z90S",
+      "출시일": "2023.12",
+      "운영체제": "Windows 11 Home",
+      "컬러": "화이트",
+      "저장용량": "256GB ~ 2TB",
+      "배터리":"77 Wh",
+      "디스플레이": "43.1cm(17in)\n해상도: WQXGA (2560x1600)\n주사율 60Hz",
+      "크기":"379 x 259 x 17.8 mm",
+      "무게": "1.35kg",
+      "칩": "CPU: Intel Core Ultra 5 125H\nGPU: Intel Arc\nNPU: Intel AI Boost",
+      "RAM": "8GB / 16GB / 32GB",
+      "가격": "1,419,000원~"
+    }
+  },
+  {
+    "id": "gramPro16",
+    "name": "그램 Pro 16",
+    "buyLink": "https://link.coupang.com/a/cJ5ckN",
+    "image": 
+    [
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/97ed/d4f55bd2ec0ad62d2c0f24c457bd9a111f449d997cc32ad6fa276feab5a7.jpg"
+    ],
+    "specs": {
+      "제조사": "엘지 LG",
+      "모델명": "16Z90SP",
+      "출시일": "2024.01",
+      "운영체제": "Windows 11 Home",
+      "컬러": "화이트",
+      "저장용량": "256GB ~ 4TB",
+      "배터리":"77 Wh",
+      "디스플레이": "40.6cm(16.1in)\n해상도: WQXGA (2560x1600)\n주사율 144Hz",
+      "크기":"358 x 252 x 12.4 mm",
+      "무게": "1.19kg",
+      "칩": "CPU: Intel Core Ultra 5\nGPU: Intel Arc\nNPU: Intel AI Boost",
+      "RAM": "16GB",
+      "가격": "1,790,000원~"
     }
   },
   {
@@ -40,19 +88,19 @@
       "출시일": "2024.03",
       "운영체제": "macOS Sequoia (15.6)",
       "컬러": "실버, 스타라이트, 스카이블루, 미드나이트",
-      "저장용량": "256GB, 512GB, 1TB, 2TB",
+      "저장용량": "256GB ~ 2TB",
       "배터리":"53.8 Wh",
-      "디스플레이": "34.5cm(13.6in) Liquid Retina\n해상도: QHD+ (2560x1664)\n16:10, 주사율 120Hz",
+      "디스플레이": "34.5cm(13.6in) Liquid Retina\n해상도: QHD+ (2560x1664)\n주사율 120Hz",
       "크기":"304.1 x 215.0 x 11.3 mm",
       "무게": "1.24kg",
       "칩": "CPU: Apple M4 (10코어)\nGPU: 8코어 or 10코어 통합 GPU\nNPU: 16코어 Neural Engine",
-      "RAM": "16GB / 24GB / 32GB 통합메모리",
-      "공식가격": "256GB: 1,590,000원\n512GB: 1,890,000원\n1TB: 2,335,680원\n2TB: 3,235,680원"
+      "RAM": "16GB / 24GB / 32GB",
+      "가격": "1,590,000원~"
     }
   },
   {
     "id": "galaxyBook5Pro",
-    "name": "갤럭시북 5Pro",
+    "name": "갤럭시북 5 Pro",
     "buyLink": "https://link.coupang.com/a/cIVg6S",
     "image": 
     [
@@ -65,14 +113,14 @@
       "출시일": "2025.01",
       "운영체제": "Windows 11 Home",
       "컬러": "그레이, 실버",
-      "저장용량": "256GB, 512GB, 1TB, 2TB",
+      "저장용량": "256GB ~ 2TB",
       "배터리":"63 Wh",
-      "디스플레이": "35.6cm(14in) AMOLED\n해상도: WQXGA+ (2880x1800)\n16:10, 주사율 120Hz",
+      "디스플레이": "35.6cm(14in) AMOLED\n해상도: WQXGA+ (2880x1800)\n주사율 120Hz",
       "크기":"312.3 x 223.8 x 11.6 mm",
       "무게": "1.23kg",
-      "칩": "CPU: Intel Core Ultra 5 226V (8코어)\nGPU: Intel Arc 130V(8GB)\nNPU: Intel AI Boost(40TOPS)",
-      "RAM": "16GB / 32GB LPDDR5X",
-      "공식가격": "256GB: 2,218,000원\n512GB: 2,318,000원\n1TB: 2,418,000원\n2TB: 2,518,000원"
+      "칩": "CPU: Intel Core Ultra 5 226V (8코어)\nGPU: Intel Arc 130V(8GB)\nNPU: Intel AI Boost",
+      "RAM": "16GB / 32GB",
+      "가격": "2,218,000원~"
     }
   }
 ]

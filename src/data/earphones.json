@@ -72,7 +72,7 @@
       "마이크":"유닛당 3개",
       "블루투스": "Bluetooth 5.3",
       "방수등급": "미지원",
-      "공식가격": "199,000원"
+      "가격": "199,000원"
     }
   },
   {
@@ -95,7 +95,7 @@
       "마이크":"유닛당 3개",
       "블루투스": "Bluetooth 5.3",
       "방수등급": "IPX4",
-      "공식가격": "359,000원"
+      "가격": "359,000원"
     }
   },
   {
@@ -121,7 +121,7 @@
       "마이크":"유닛당 3개",
       "블루투스": "Bluetooth 5.4",
       "방수등급": "IPX7",
-      "공식가격": "319,000원"
+      "가격": "319,000원"
     }
   },
   {
@@ -147,7 +147,62 @@
       "마이크":"유닛당 3개",
       "블루투스": "Bluetooth 5.4",
       "방수등급": "IP57",
-      "공식가격": "219,000원"
+      "가격": "219,000원"
+    }
+  },
+  {
+    "id": "galaxyBudsFe",
+    "name": "갤럭시 버즈 FE",
+    "buyLink": "https://link.coupang.com/a/cJ5NY9",
+    "image": [
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/049b/6bcb608e276d2e5fe2e6ca37bbce30ccb93926a1f7554cd35561987b5f4c.jpg",
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/1025_amir_coupang_oct_80k/7347/ee4c392c37486295051cc0a119ec050bf6ca5e81c6f388727308f024497e.jpg"
+      ],
+    "specs": {
+      "제조사": "삼성전자 Samsung",
+      "모델명": "SM-R400N",
+      "출시일": "2023.10",
+      "타입": "커널형",
+      "컬러": "화이트, 블랙",
+      "드라이버": "1-Way 스피커",
+      "노이즈캔슬링(ANC)": "O",
+      "배터리": "유닛 60mAh\n케이스 479mAh",
+      "재생시간": "유닛 8.5시간\n케이스 30시간",
+      "크기":"유닛 19.2 x 17.1 x 22.2 mm\n케이스 50.0 x 50.0 x 27.7 mm",
+      "무게": "유닛 5.6g\n케이스 40g",
+      "마이크":"유닛당 3개",
+      "블루투스": "Bluetooth 5.2",
+      "방수등급": "IPX2",
+      "가격": "57,000원~"
+    }
+  },
+  {
+    "id": "AnkerSoundcoreLiberty4NC",
+    "name": "앤커 사운드코어 리버티 4 NC",
+    "buyLink": "https://link.coupang.com/a/cJ5ZHh",
+    "image": [
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/7bed/a462f70f6a4d6e6f48a613beb210e4aebfc76a64cdd73c2a041da48fa563.PNG",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/0073/7a6e7263db3f4ebc643c8c1d8ebd84bbf1c6b52b53522fafba246891f9f8.PNG",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/ceb4/8fd13026e2effa1171000221a063298694c40d283757304a0d563bf0d4cd.PNG",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/989e/4b09bcdcbb54956418e3b825918f1a44b30718e545014f663ae56c993d9e.PNG",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/3620/a29ce48a80625122f78b72912f4720acf2b0e036d5f010e67a35f2bde149.PNG"
+      ],
+    "specs": {
+      "제조사": "앤커 Anker",
+      "모델명": "SM-R400N",
+      "출시일": "2023.7",
+      "타입": "커널형",
+      "컬러": "화이트, 핑크, 블랙, 블루, 네이비",
+      "드라이버": "11mm 동적 드라이버",
+      "노이즈캔슬링(ANC)": "O",
+      "배터리": "유닛 53mAh\n케이스 800mAh",
+      "재생시간": "유닛 10시간\n케이스 50시간",
+      "크기":"유닛 15 x 33 x 28 mm\n케이스 57 x 57 x 30 mm",
+      "무게": "유닛 5g\n케이스 60g",
+      "마이크":"유닛당 3개",
+      "블루투스": "Bluetooth 5.3",
+      "방수등급": "IPX4",
+      "가격": "69,990원~"
     }
   },
   {
@@ -174,7 +229,7 @@
       "마이크":"유닛당 2개",
       "블루투스": "Bluetooth 5.3",
       "방수등급": "IPX4",
-      "공식가격": "29,900원"
+      "가격": "29,900원"
     }
   }
 ]
