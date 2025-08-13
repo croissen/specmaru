@@ -243,6 +243,34 @@
     }
   },
   {
+    "id": "galaxyS24Fe",
+    "name": "갤럭시 S24 FE",
+    "buyLink": "https://link.coupang.com/a/cKkbrf",
+    "image": 
+    [
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/ac68/73dfc0f84c0072dc99ca6ab5eca2b4f83a8c92929e84eaa71cf6d0f0831f.jpg",
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/c171/37b87e4ac02cc8d47fbd794b512a47b0b081d279f7f700518b9d96a8d5de.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/96d4/f643d3eb3941bb3a4cc2003db951c91e91de4114d7498ad0f4fa97ca2cec.jpg",
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/8fbe/f1957b8964bd40ce68d3978a458f9f265f94feb54a836e9cf64140c6ea33.jpg"
+      
+    ],
+      "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-S721",
+      "출시일": "2024.11",
+      "운영체제": "Android 14",
+      "컬러": "그레이, 그라파이트, 블루, 옐로우",
+      "저장용량": "256GB",
+      "디스플레이": "17cm(6.7in) Dynamic AMOLED 2X\n해상도: FHD+ (2340 x 1080)\n최대밝기 1900니트/주사율 120Hz",
+      "크기": "77.3 × 162.0 × 8.0 mm",
+      "무게": "213g",
+      "칩": "AP: Exynos 2400e\nCPU: 10코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Xclipse 940\nRAM: 8GB",
+      "카메라": "초광각 12MP F2.2\n광각50MP F1.8\n망원 8MP F2.4\n전면 10MP F2.4",
+      "배터리": "4700mAh",
+      "가격": "830,000원~"
+    }
+  },
+  {
     "id": "galaxyS25",
     "name": "갤럭시 S25",
     "buyLink": "https://link.coupang.com/a/cI4tRG",
@@ -258,7 +286,7 @@
       "제조사": "삼성 Samsung",
       "모델명": "SM-S9310",
       "출시일": "2025.02",
-      "운영체제": "Android 15 / One UI 7",
+      "운영체제": "Android 15",
       "컬러": "아이스블루, 민트, 네이비, 실버 섀도우",
       "저장용량": "256GB, 512GB",
       "디스플레이": "15.7cm(6.1in) Dynamic AMOLED 2X\n해상도: FHD+ (2340 x 1080)\n최대밝기 2600니트/주사율 120Hz",
@@ -271,30 +299,57 @@
     }
   },
   {
-    "id": "galaxyS25Plus",
-    "name": "갤럭시 S25+",
-    "buyLink": "https://link.coupang.com/a/cI4kYi",
+    "id": "galaxyS24Plus",
+    "name": "갤럭시 S24+",
+    "buyLink": "https://link.coupang.com/a/cKklEJ",
     "image": 
     [
-      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475603057500-61ef1d06-b432-43fb-a37b-bd2539707f31.jpg",
-      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475683573306-5b65bc18-d7a8-49fa-a682-476cf863720a.jpg",
-      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475777474173-9cb90f90-121e-4a6c-9366-47e450aaef90.jpg",
-      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/42475860211864-7c540ee5-7193-461e-b857-68ec93b02081.jpg"
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/3d76/a28eb1c3d4d168c31f7e5ca2b79f6d24a6e5e1e7cdd4473cc8a5695a81ac.jpg",
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/4d7f/a34079d1ee03afe09279ef495c0ac85e82d6a3d17cd3c855bf1bfa59d128.jpg",
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/332c/1aae8b2041385f1f692818203d2a802789d6930c37722951cc6137be9280.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/3750/40b7c13abf1dad58005da319ff59ac8ab2b3e4fc8083424a0346a75c2bc9.jpg"
     ],
     "specs": {
       "제조사": "삼성 Samsung",
-      "모델명": "SM-S9360",
-      "출시일": "2025.02",
-      "운영체제": "Android 15 / One UI 7",
-      "컬러": "아이스블루, 민트, 네이비, 실버 섀도우",
+      "모델명": "SM-S926",
+      "출시일": "2024.01",
+      "운영체제": "Android 14",
+      "컬러": "오닉스 블랙, 마블 그레이, 앰버 옐로우, 코발트 바이올렛",
       "저장용량": "256GB, 512GB",
-      "디스플레이": "16.9cm Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
-      "크기": "75.8 x 158.4 x 7.3 mm",
-      "무게": "190g",
-      "칩": "AP: Snapdragon 8 Elite\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
+      "디스플레이": "16.9cm(6.7in) Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
+      "크기": "75.9 x 158.5 x 7.7 mm",
+      "무게": "196g",
+      "칩": "AP: Exynos 2400\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Xclipse 940\nRAM: 12GB",
       "카메라": "초광각 12MP F2.2\n광각50MP F1.8\n망원 10MP F2.4\n전면 12MP F2.2",
       "배터리": "4,900mAh",
-      "가격": "1,270,000원~"
+      "가격": "1,120,900원~"
+    }
+  },
+  {
+    "id": "galaxyS24Ultra",
+    "name": "갤럭시 S24 Ultra",
+    "buyLink": "https://link.coupang.com/a/cKkAJY",
+    "image": 
+    [
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/c39b/3b945e2acf90ab3af9045bd46121ccb396528e6f003fee8175d3a4804833.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/7716/29e80c4a34e8c0b92dd6c98727e7b88dda51f4eed253f90f492a7ae12e44.jpg",
+      "//thumbnail9.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/f3b0/f4e858eabbc6b3559234a54d9851bb2ae3065a4d61f959585db1a5562310.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/ed65/84df9275a619410bd8023d919c10350343e705bfeb3a278ed80145e6f47a.jpg"
+    ],
+    "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-S928",
+      "출시일": "2024.01",
+      "운영체제": "Android 14",
+      "컬러": "그레이, 블랙, 옐로우, 바이올렛",
+      "저장용량": "256GB, 512GB, 1TB",
+      "디스플레이": "17.3cm(6.8in) Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
+      "크기": "79 x 162.3 x 8.6 mm",
+      "무게": "232g",
+      "칩": "AP: Snapdragon 8 Gen 3\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 750\nRAM: 12GB",
+      "카메라": "초광각 12MP F2.4\n광각200MP F1.7\n망원1 10MP F2.2\n망원2 50MP F3.4\n전면 12MP F2.2",
+      "배터리": "5,000mAh",
+      "가격": "898,030원~"
     }
   },
   {
@@ -312,16 +367,94 @@
       "제조사": "삼성 Samsung",
       "모델명": "SM-S9380",
       "출시일": "2025.02",
-      "운영체제": "Android 15 / One UI 7",
+      "운영체제": "Android 15",
       "컬러": "그레이, 블랙, 실버블루, 화이트실버",
       "저장용량": "256GB, 512GB, 1TB",
-      "디스플레이": "17.4cm Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
+      "디스플레이": "17.4cm(6.8in) Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
       "크기": "77.6 x 162.8 x 8.2 mm",
       "무게": "218g",
       "칩": "AP: Snapdragon 8 Elite\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
       "카메라": "초광각 50MP F1.9\n광각200MP F1.7\n망원1 10MP F2.4\n망원2 50MP F3.4\n전면 12MP F2.2",
       "배터리": "5,000mAh",
       "가격": "1,592,900원~"
+    }
+  },
+  {
+    "id": "galaxyZFold6",
+    "name": "갤럭시 Z폴드6",
+    "buyLink": "https://link.coupang.com/a/cKkNUx",
+    "image": 
+    [
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/69da/8ea9f4338d3473e1c4d7f7cf046e1a50c2b48622f4194735fd5c77f95acb.jpg",
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/2861/6d0c8f1a8ba0b5cd07b5952f6e043aca76e972f7abc475da6fbea505cbbf.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/19ca/b63f0b2522ef8f366aa14f45fca13935d488f90696fe90e5cf6beababb96.jpg"
+    ],
+    "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-F956N",
+      "출시일": "2024.7",
+      "운영체제": "Android 14",
+      "컬러": "실버쉐도우, 네이비, 핑크",
+      "저장용량": "256GB, 512GB, 1TB",
+      "디스플레이": "19.3cm(7.6in) Dynamic AMOLED 2X\n해상도: QXGA+ (2160 x 1856)\n최대밝기 2600니트/주사율 120Hz",
+      "크기": "132.6 x 153.5 x 5.6 mm",
+      "무게": "239g",
+      "칩": "AP: Snapdragon 8 Elite\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
+      "카메라": "초광각 12MP F1.9\n광각50MP F1.7\n망원1 10MP F2.4\n망원2 50MP F3.4\n전면 12MP F2.2",
+      "배터리": "4,400mAh",
+      "가격": "2,259,000원~"
+    }
+  },
+  {
+    "id": "galaxyZFold7",
+    "name": "갤럭시 Z폴드7",
+    "buyLink": "https://link.coupang.com/a/cKkG8q",
+    "image": 
+    [
+      "//thumbnail8.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/51179030656546-c7c05ff6-ba41-42ce-99a7-a914ccebf59d.jpg",
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/14606019235020-40e87eab-342b-45bb-8e83-0891af6b4d37.jpg",
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/101867511996968-d58a86a5-31d3-4394-9a8b-509bdcd0d566.jpg"
+    ],
+    "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-F966N",
+      "출시일": "2025.7",
+      "운영체제": "Android 16",
+      "컬러": "실버쉐도우, 제트블랙, 블루쉐도우",
+      "저장용량": "256GB, 512GB, 1TB",
+      "디스플레이": "20.3cm(8in) Dynamic AMOLED 2X\n해상도: QXGA+ (2184 x 1968)\n최대밝기 2600니트/주사율 120Hz",
+      "크기": "143.2 x 158.4 x 4.2 mm",
+      "무게": "215g",
+      "칩": "AP: Snapdragon 8 Elite\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12/16GB",
+      "카메라": "초광각 12MP F2.2\n광각200MP F1.7\n망원1 10MP F2.4\n전면 12MP F2.2",
+      "배터리": "4,400mAh",
+      "가격": "2,259,000원~"
+    }
+  },
+  {
+    "id": "galaxyZFlip7",
+    "name": "갤럭시 Z플립7",
+    "buyLink": "https://link.coupang.com/a/cKkUQt",
+    "image": 
+    [
+      "//thumbnail10.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/15101628767472-86910a23-1fa5-48b9-993c-5405ef7988f0.jpg",
+      "//thumbnail6.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/15286771035134-c843f8e6-bc43-4755-ba55-a1055d1b6569.jpg",
+      "//thumbnail7.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/52104965995502-472d9907-3d3f-44ad-afa9-f8aa116c49b0.jpg"
+    ],
+    "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-F966N",
+      "출시일": "2025.7",
+      "운영체제": "Android 16",
+      "컬러": "블루쉐도우, 제트블랙, 코랄레드",
+      "저장용량": "256GB, 512GB",
+      "디스플레이": "17.4cm(6.9in) Dynamic AMOLED 2X\n해상도: FHD+ (2520 x 1080)\n최대밝기 1600니트/주사율 120Hz",
+      "크기": "75.2 x 166.7 x 6.5 mm",
+      "무게": "188g",
+      "칩": "AP: Exynos 2500\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Xclipse 950\nRAM: 12GB",
+      "카메라": "초광각 12MP F2.2\n광각200MP F1.8\n전면 10MP F2.2",
+      "배터리": "4,300mAh",
+      "가격": "1,396,000원~"
     }
   }
 ]
