@@ -1,8 +1,7 @@
 // src/pages/Home.jsx
 import React, { useState, useEffect } from 'react';
 import * as S from './Home.styles';
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate, useSearchParams } from 'react-router-dom';
 
 const tabs = [
   { id: 'news', name: '📰 뉴스' },
@@ -12,13 +11,20 @@ const tabs = [
 ];
 
 function Home() {
-  const [activeTab, setActiveTab] = useState('all');
+  const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const tabFromUrl = searchParams.get('tab') || 'all';
+  const [activeTab, setActiveTab] = useState(tabFromUrl);
   const [allProducts, setAllProducts] = useState([]);
   const [newsList, setNewsList] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 10;
-  const navigate = useNavigate();
+
+  // URL과 activeTab 동기화
+  useEffect(() => {
+    setActiveTab(tabFromUrl);
+  }, [tabFromUrl]);
 
   // 제품 데이터 불러오기
   useEffect(() => {
@@ -57,6 +63,10 @@ function Home() {
 
   const filteredProducts = allProducts
     .filter(product => activeTab === 'all' || product.category === activeTab)
+    .filter(product =>
+      product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.brand?.toLowerCase().includes(searchTerm.toLowerCase())
+    )
     .sort((a, b) => (b.name || '').localeCompare(a.name || '', 'ko'));
 
   const indexOfLastItem = currentPage * itemsPerPage;
@@ -69,6 +79,10 @@ function Home() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const handleTabClick = (tabId) => {
+    setSearchParams({ tab: tabId === 'all' ? '' : tabId });
+  };
+
   return (
     <S.Container>
       <S.Title>
@@ -77,12 +91,12 @@ function Home() {
       </S.Title>
 
       <S.Tabs>
-        <S.Tab active={activeTab === 'all'} onClick={() => setActiveTab('all')}>홈</S.Tab>
+        <S.Tab active={activeTab === 'all'} onClick={() => handleTabClick('all')}>홈</S.Tab>
         {tabs.map(tab => (
           <S.Tab
             key={tab.id}
             active={activeTab === tab.id}
-            onClick={() => setActiveTab(tab.id)}
+            onClick={() => handleTabClick(tab.id)}
           >
             {tab.name}
           </S.Tab>
@@ -92,12 +106,16 @@ function Home() {
       {activeTab === 'news' ? (
         <S.ProductList>
           {newsList.map(item => (
-            <S.ProductCard 
-              key={item.id} 
-              onClick={() => window.open(item.link, '_blank')} // 블로그로 바로 이동
+            <S.ProductCard
+              key={item.id}
+              onClick={() => window.open(item.link, '_blank')}
               style={{ cursor: 'pointer' }}
             >
-              <img src={process.env.PUBLIC_URL + item.thumbnail} alt={item.title} style={{ width: '100px' }} />
+              <img
+                src={process.env.PUBLIC_URL + item.thumbnail}
+                alt={item.title}
+                style={{ width: '100px' }}
+              />
               <h3>{item.title}</h3>
             </S.ProductCard>
           ))}
@@ -119,7 +137,12 @@ function Home() {
                   onClick={() => navigate(`/product/${product.id}`)}
                   title="상세 페이지로 이동"
                 >
-                  {product.image && <S.ProductImage src={Array.isArray(product.image) ? product.image[0] : product.image} alt={product.name} />}
+                  {product.image && (
+                    <S.ProductImage
+                      src={Array.isArray(product.image) ? product.image[0] : product.image}
+                      alt={product.name}
+                    />
+                  )}
                   <h3>{product.name}</h3>
                   {product.description && <p>{product.description}</p>}
                 </S.ProductCard>
@@ -132,12 +155,17 @@ function Home() {
           {totalPages > 1 && (
             <div style={{ textAlign: 'center', margin: '20px 0' }}>
               {Array.from({ length: totalPages }, (_, i) => (
-                <button key={i + 1} onClick={() => goToPage(i + 1)}
+                <button
+                  key={i + 1}
+                  onClick={() => goToPage(i + 1)}
                   style={{
-                    margin: '0 5px', padding: '5px 10px',
+                    margin: '0 5px',
+                    padding: '5px 10px',
                     backgroundColor: currentPage === i + 1 ? '#0073e6' : '#fff',
                     color: currentPage === i + 1 ? '#fff' : '#000',
-                    border: '1px solid #ccc', borderRadius: '4px', cursor: 'pointer',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    cursor: 'pointer',
                   }}
                 >
                   {i + 1}
@@ -148,7 +176,10 @@ function Home() {
         </>
       )}
 
-      <S.ScrollTopButton onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} title="맨 위로 이동">
+      <S.ScrollTopButton
+        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        title="맨 위로 이동"
+      >
         ⬆ 맨 위로
       </S.ScrollTopButton>
     </S.Container>
