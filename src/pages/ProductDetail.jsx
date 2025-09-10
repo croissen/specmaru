@@ -107,7 +107,7 @@ function ImageSlider({ images }) {
     <S.ImageSliderWrapper>
       {imgs.length > 1 && <S.Arrow onClick={handlePrev}>◀</S.Arrow>}
       <S.SliderImage 
-        src={imgs[current].startsWith('http') ? imgs[current] : 'https:' + imgs[current]} 
+        src={imgs[current].startsWith('http') ? imgs[current] : imgs[current]} 
         alt={`이미지 ${current + 1}`} 
       />
       {imgs.length > 1 && <S.Arrow onClick={handleNext}>▶</S.Arrow>}

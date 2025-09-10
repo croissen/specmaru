@@ -1,5 +1,112 @@
 [
   {
+    "id": "iphone17",
+    "name": "아이폰 17",
+    "buyLink": "https://link.coupang.com/a/cPT0rS",
+    "image": 
+    [
+      "/phoneimg/ip1.png",
+      "/phoneimg/ip2.png",
+      "/phoneimg/ip3.png",
+      "/phoneimg/ip4.png",
+      "/phoneimg/ip5.png"
+    ],
+    "specs": {
+      "제조사": "애플 Apple",
+      "모델명": "",
+      "출시일": "2025.09",
+      "운영체제":"iOS 26",
+      "컬러":"라벤더, 세이지, 미스트 블루, 화이트, 블랙",
+      "저장용량":"256GB, 512GB",
+      "디스플레이":"15.9cm(6.3in) Super Retina XDR\n해상도: FHD+ (2622 x 1206)\n최대밝기 1200니트/주사율 60Hz",
+      "크기":"71.5 x 149.6 x 7.95 mm",
+      "무게":"177g",
+      "칩": "AP: Apple A19\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (5코어)\nRAM: 8GB",
+      "카메라": "광각48MP F1.6\n전면 18MP F1.9",
+      "배터리":"동영상 최대 30시간",
+      "가격": "1,290,000원~"
+    }
+  },
+    {
+    "id": "iphone17Air",
+    "name": "아이폰 Air",
+    "buyLink": "https://link.coupang.com/a/cPT03g",
+    "image": 
+    [
+      "/phoneimg/ipair1.png",
+      "/phoneimg/ipair2.png",
+      "/phoneimg/ipair3.png",
+      "/phoneimg/ipair4.png"
+    ],
+    "specs": {
+      "제조사": "애플 Apple",
+      "모델명": "",
+      "출시일": "2025.09",
+      "운영체제":"iOS 26",
+      "컬러":"스카이블루, 라이트골드, 클라우드화이트, 스페이스블랙",
+      "저장용량":"256GB ~ 1TB",
+      "디스플레이":"16.6cm(6.54in) Super Retina XDR\n해상도: FHD+ (2622 x 1206)\n최대밝기 1200니트/주사율 60Hz",
+      "크기":"74.7 x 156.2 x 5.64 mm",
+      "무게":"165g",
+      "칩": "AP: Apple A19\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (5코어)\nRAM: 8GB",
+      "카메라": "광각48MP F1.6\n전면 18MP F1.9",
+      "배터리":"동영상 최대 27시간",
+      "가격": "1,590,000원~"
+    }
+  },
+  {
+    "id": "iphone17Pro",
+    "name": "아이폰 17 Pro",
+    "buyLink": "https://link.coupang.com/a/cPUgex",
+    "image": 
+    [
+      "/phoneimg/ippromax1.png",
+      "/phoneimg/ippromax2.png",
+      "/phoneimg/ippromax3.png"
+    ],
+    "specs": {
+      "제조사": "애플 Apple",
+      "모델명": "",
+      "출시일": "2025.09",
+      "운영체제":"iOS 26",
+      "컬러":"코스믹오렌지, 딥블루, 실버",
+      "저장용량":"256GB ~ 1TB",
+      "디스플레이":"15.9cm(6.3in) Super Retina XDR\n해상도: FHD+ (2622 x 1206)\n최대밝기 1200니트/주사율 60Hz",
+      "크기":"71.9 x 150.0 x 8.75 mm",
+      "무게":"204g",
+      "칩": "AP: Apple A19\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (6코어)\nRAM: 8GB",
+      "카메라": "광각48MP F1.6\n전면 18MP F1.9",
+      "배터리":"동영상 최대 31시간",
+      "가격": "1,790,000원~"
+    }
+  },
+  {
+    "id": "iphone17ProMax",
+    "name": "아이폰 17 Pro Max",
+    "buyLink": "https://link.coupang.com/a/cPT0X5",
+    "image": 
+    [
+      "/phoneimg/ippromax1.png",
+      "/phoneimg/ippromax2.png",
+      "/phoneimg/ippromax3.png"
+    ],
+    "specs": {
+      "제조사": "애플 Apple",
+      "모델명": "",
+      "출시일": "2025.09",
+      "운영체제":"iOS 26",
+      "컬러":"코스믹오렌지, 딥블루, 실버",
+      "저장용량":"256GB ~ 2TB",
+      "디스플레이":"17.4cm(6.85in) Super Retina XDR\n해상도: FHD+ (2868 x 1320)\n최대밝기 1200니트/주사율 60Hz",
+      "크기":"78.0 x 163.4 x 8.75 mm",
+      "무게":"231g",
+      "칩": "AP: Apple A19\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (6코어)\nRAM: 8GB",
+      "카메라": "광각48MP F1.6\n전면 18MP F1.9",
+      "배터리":"동영상 최대 37시간",
+      "가격": "1,990,000원~"
+    }
+  },
+  {
     "id": "iphone16e",
     "name": "아이폰 16e",
     "buyLink": "https://link.coupang.com/a/cJNVmT",
@@ -14,7 +121,7 @@
       "운영체제":"iOS 18",
       "컬러":"화이트, 블랙",
       "저장용량":"128GB, 256GB, 512GB",
-      "디스플레이":"154.cm(6.1in) OLED\n해상도: FHD+ (2532 x 1170)\n최대밝기 1200니트/주사율 60Hz",
+      "디스플레이":"15.4cm(6.1in) OLED\n해상도: FHD+ (2532 x 1170)\n최대밝기 1200니트/주사율 60Hz",
       "크기":"71.5 x 147.6 x 7.8 mm",
       "무게":"167g",
       "칩": "AP: Apple A18\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (4코어)\nRAM: 8GB",
