@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkspecmaru=self.webpackChunkspecmaru||[]).push([[25],{25:e=>{e.exports=JSON.parse('[{"id":"news1","title":"\uc544\uc774\ud3f0 17 \ucd9c\uc2dc \uc784\ubc15","thumbnail":"/newsimg/ip17.png","link":"https://moneyrise.tistory.com/46"}]')}}]);
