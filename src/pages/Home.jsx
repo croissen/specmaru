@@ -108,7 +108,7 @@ function Home() {
   }, [activeTab]);
 
   const exampleComparisons = [
-    { id1: 'iphone17Pro', id2: 'galaxyS25Ultra', title: '아이폰 17 Pro vs 갤럭시 S25 Ultra 비교' },
+    { id1: 'iphone17ProMax', id2: 'galaxyS25Ultra', title: '아이폰 17 Pro Max vs 갤럭시 S25 Ultra 비교' },
     { id1: 'airpodsPro2', id2: 'galaxyBuds3Pro', title: '에어팟 프로2 vs 갤럭시 버즈3 프로 비교' },
     { id1: 'galaxyBook5Pro', id2: 'macBookAir13', title: '갤럭시북5 프로 vs 맥북 에어 13 비교' },
   ];
