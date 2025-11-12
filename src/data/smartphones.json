@@ -2,18 +2,18 @@
   {
     "id": "iphone17",
     "name": "아이폰 17",
-    "buyLink": "https://link.coupang.com/a/cPT0rS",
+    "buyLink": "https://link.coupang.com/a/c3EhtU",
     "image": 
     [
-      "/phoneimg/ip1.png",
-      "/phoneimg/ip2.png",
-      "/phoneimg/ip3.png",
-      "/phoneimg/ip4.png",
-      "/phoneimg/ip5.png"
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/67279423063187-eb279b46-aa4a-445d-9e6c-bc9b5704399b.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/23706273970919-e1293663-297c-41fd-933a-1b43b92d85dc.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/67247658140186-4e3bcf1b-f670-4093-9d3e-163a3efa82b6.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/23549401340111-688e83a8-91d7-4371-a10b-41928c1c38e9.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/67209091244692-f217bda1-c213-4d57-ad42-4013474e0d75.jpg"
     ],
     "specs": {
       "제조사": "애플 Apple",
-      "모델명": "",
+      "모델명": "A3520",
       "출시일": "2025.09",
       "운영체제":"iOS 26",
       "컬러":"라벤더, 세이지, 미스트 블루, 화이트, 블랙",
@@ -30,17 +30,17 @@
     {
     "id": "iphone17Air",
     "name": "아이폰 Air",
-    "buyLink": "https://link.coupang.com/a/cPT03g",
+    "buyLink": "https://link.coupang.com/a/c3EhSg",
     "image": 
     [
-      "/phoneimg/ipair1.png",
-      "/phoneimg/ipair2.png",
-      "/phoneimg/ipair3.png",
-      "/phoneimg/ipair4.png"
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/47977421597272-921cde4a-5296-4364-8404-ba67c9cbe724.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/24201037502706-3ba1755e-6d95-4ce9-9d48-9b3b8b3db978.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/66887385431681-4bacf648-1f10-46da-b524-7123220c3214.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/24086958657025-19f448ca-52f3-45a5-9a9f-9ba77e101269.jpg"
     ],
     "specs": {
       "제조사": "애플 Apple",
-      "모델명": "",
+      "모델명": "A3517",
       "출시일": "2025.09",
       "운영체제":"iOS 26",
       "컬러":"스카이블루, 라이트골드, 클라우드화이트, 스페이스블랙",
@@ -51,22 +51,22 @@
       "칩": "AP: Apple A19\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (5코어)\nRAM: 8GB",
       "카메라": "광각48MP F1.6\n전면 18MP F1.9",
       "배터리":"3,036mAh",
-      "가격": "1,590,000원~"
+      "가격": "1,510,500원~"
     }
   },
   {
     "id": "iphone17Pro",
     "name": "아이폰 17 Pro",
-    "buyLink": "https://link.coupang.com/a/cPUgex",
+    "buyLink": "https://link.coupang.com/a/c3EbwL",
     "image": 
     [
-      "/phoneimg/ippromax1.png",
-      "/phoneimg/ippromax2.png",
-      "/phoneimg/ippromax3.png"
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/518574702278411-9362c03b-2b88-4549-bbe9-63d29284ba11.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/24785252987335-4bbbc907-f982-4abf-bae2-695974357c79.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/24628722769186-fdfe4254-6d75-4837-bf0a-0268ef1b3807.jpg"
     ],
     "specs": {
       "제조사": "애플 Apple",
-      "모델명": "",
+      "모델명": "A3523",
       "출시일": "2025.09",
       "운영체제":"iOS 26",
       "컬러":"코스믹오렌지, 딥블루, 실버",
@@ -83,16 +83,16 @@
   {
     "id": "iphone17ProMax",
     "name": "아이폰 17 Pro Max",
-    "buyLink": "https://link.coupang.com/a/cPT0X5",
+    "buyLink": "https://link.coupang.com/a/c3Eea6",
     "image": 
     [
-      "/phoneimg/ippromax1.png",
-      "/phoneimg/ippromax2.png",
-      "/phoneimg/ippromax3.png"
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/518574702278411-9362c03b-2b88-4549-bbe9-63d29284ba11.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/24785252987335-4bbbc907-f982-4abf-bae2-695974357c79.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/24628722769186-fdfe4254-6d75-4837-bf0a-0268ef1b3807.jpg"
     ],
     "specs": {
       "제조사": "애플 Apple",
-      "모델명": "",
+      "모델명": "A3526",
       "출시일": "2025.09",
       "운영체제":"iOS 26",
       "컬러":"코스믹오렌지, 딥블루, 실버",
@@ -103,7 +103,7 @@
       "칩": "AP: Apple A19\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (6코어)\nRAM: 8GB",
       "카메라": "광각48MP F1.6\n전면 18MP F1.9",
       "배터리":"4,823mAh",
-      "가격": "1,990,000원~"
+      "가격": "2,290,000~"
     }
   },
   {
@@ -127,7 +127,7 @@
       "칩": "AP: Apple A18\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (4코어)\nRAM: 8GB",
       "카메라": "광각48MP F1.6\n전면 12MP F1.9",
       "배터리":"3,961mAh",
-      "가격": "965,250원~"
+      "가격": "940,000원~"
     }
   },
   {
@@ -155,7 +155,7 @@
       "칩": "AP: Apple A16\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (5코어)\nRAM: 6GB",
       "카메라": "광각48MP F1.6\n전면 12MP F1.9",
       "배터리":"3,349 mAh",
-      "가격": "999,900원~"
+      "가격": "1,099,900원~"
     }
   },
   {
@@ -183,7 +183,7 @@
       "칩": "AP: Apple A18\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (5코어)\nRAM: 8GB",
       "카메라": "초광각 12MP F2.2\n광각48MP F1.6\n전면 12MP F1.9",
       "배터리":"3,561mAh",
-      "가격": "1,212,500원~"
+      "가격": "1,150,000원~"
     }
   },
   {
@@ -239,7 +239,7 @@
       "칩": "AP: Apple A18\nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (6코어)\nRAM: 8GB",
       "카메라": "초광각 12MP F2.2\n광각48MP F1.6\n전면 12MP F1.9",
       "배터리":"4,674mAh",
-      "가격": "1,309,500원~"
+      "가격": "1,290,000원~"
     }
   },
   {
@@ -319,7 +319,7 @@
       "칩": "AP: Apple A17 Pro \nCPU: 6코어 (2x 성능 + 4x 효율)\nGPU: Apple GPU (6코어)\nRAM: 8GB",
       "카메라": "초광각 12MP F2.2\n광각48MP F1.78\n망원 12MP F2.8\n전면 12MP F1.9",
       "배터리":"3,274 mAh",
-      "가격": "1,643,500원~"
+      "가격": "1,548,000원~"
     }
   },
   {
@@ -483,7 +483,7 @@
       "칩": "AP: Snapdragon 8 Elite\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
       "카메라": "초광각 50MP F1.9\n광각200MP F1.7\n망원1 10MP F2.4\n망원2 50MP F3.4\n전면 12MP F2.2",
       "배터리": "5,000mAh",
-      "가격": "1,592,900원~"
+      "가격": "1,490,700원~"
     }
   },
   {
