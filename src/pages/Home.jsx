@@ -8,6 +8,7 @@ const tabs = [
   { id: 'smartphones', name: '📱 스마트폰', file: 'smartphones.json' },
   { id: 'earphones', name: '🎧 이어폰', file: 'earphones.json' },
   { id: 'laptops', name: '💻 노트북', file: 'laptops.json' },
+  { id: 'used', name: '♻️ 중고&가성비' }, 
 ];
 
 const normalizeText = (text) => {
@@ -69,10 +70,12 @@ function Home() {
         const smartData = await import(`../data/smartphones.json`);
         const earphoneData = await import(`../data/earphones.json`);
         const laptopData = await import(`../data/laptops.json`);
+        const usedData = await import(`../data/used.json`);
         const combined = [
           ...smartData.default.map(p => ({ ...p, category: 'smartphones' })),
           ...earphoneData.default.map(p => ({ ...p, category: 'earphones' })),
           ...laptopData.default.map(p => ({ ...p, category: 'laptops' })),
+          ...usedData.default.map(p => ({ ...p, category: 'used' })),
         ];
         setAllProducts(combined);
       } catch (err) {
@@ -203,7 +206,24 @@ function Home() {
       )}
 
       <S.ProductList>
-        {currentItems.length > 0 ? (
+      {currentItems.length > 0 ? (
+        activeTab === "used" ? (
+          [...currentItems]
+            .sort((a, b) => Number(a.price.replace(/[^\d]/g, '')) - Number(b.price.replace(/[^\d]/g, '')))
+            .map(item => (
+              <S.ProductCard
+                key={item.id}
+                className="used-card"
+                onClick={() => window.open(item.link)}
+              >
+                <S.ProductImage src={item.thumbnail} alt={item.name} />
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.price}</p>
+                </div>
+              </S.ProductCard>
+            ))
+        ) : (
           currentItems.map(product => (
             <S.ProductCard
               key={product.id}
@@ -221,10 +241,11 @@ function Home() {
               {product.description && <p>{product.description}</p>}
             </S.ProductCard>
           ))
-        ) : (
-          <S.NoResult>검색 결과가 없습니다.</S.NoResult>
-        )}
-      </S.ProductList>
+        )
+      ) : (
+        <S.NoResult>검색 결과가 없습니다.</S.NoResult>
+      )}
+    </S.ProductList>
 
       {totalPages > 1 && (
         <div style={{ textAlign: 'center', margin: '20px 0' }}>
