@@ -165,16 +165,35 @@ function Home() {
         ))}
       </S.Tabs>
 
-      <S.SearchInput
-        type="text"
-        placeholder="제품명 또는 브랜드 검색"
-        value={searchTerm}
-        onChange={e => {
-          setSearchTerm(e.target.value);
-          setCurrentPage(1);
-        }}
-      />
+      {/* 사이트 내 검색은 used 탭 제외 */}
+      {activeTab !== 'used' && (
+        <S.SearchInput
+          type="text"
+          placeholder="제품명 또는 브랜드 검색"
+          value={searchTerm}
+          onChange={e => {
+            setSearchTerm(e.target.value);
+            setCurrentPage(1);
+          }}
+        />
+      )}
 
+      {/* used 탭에서는 쿠팡 검색 위젯 */}
+      {activeTab === 'used' && (
+        <div style={{ margin: '20px 0' }}>
+          <iframe
+            src="https://coupa.ng/ckT9n4"
+            width="80%"
+            height="44"
+            frameBorder="0"
+            scrolling="no"
+            referrerPolicy="unsafe-url"
+            browsingTopics
+          ></iframe>
+        </div>
+      )}
+
+      {/* 예시 비교 카드: all 탭, 검색어 없을 때만 */}
       {activeTab === 'all' && searchTerm.trim() === '' && (
         <S.ExampleComparisonList>
           {exampleComparisons.map(({ id1, id2, title }) => {
@@ -209,48 +228,50 @@ function Home() {
         </S.ExampleComparisonList>
       )}
 
+      {/* 제품 리스트 */}
       <S.ProductList>
-      {currentItems.length > 0 ? (
-        activeTab === "used" ? (
-          [...currentItems]
-            .sort((a, b) => Number(a.price.replace(/[^\d]/g, '')) - Number(b.price.replace(/[^\d]/g, '')))
-            .map(item => (
+        {currentItems.length > 0 ? (
+          activeTab === "used" ? (
+            [...currentItems]
+              .sort((a, b) => Number(a.price.replace(/[^\d]/g, '')) - Number(b.price.replace(/[^\d]/g, '')))
+              .map(item => (
+                <S.ProductCard
+                  key={item.id}
+                  className="used-card"
+                  onClick={() => window.open(item.link)}
+                >
+                  <S.ProductImage src={item.thumbnail} alt={item.name} />
+                  <div>
+                    <h3>{item.title}</h3>
+                    <p>{item.price}</p>
+                  </div>
+                </S.ProductCard>
+              ))
+          ) : (
+            currentItems.map(product => (
               <S.ProductCard
-                key={item.id}
-                className="used-card"
-                onClick={() => window.open(item.link)}
+                key={product.id}
+                onClick={() => navigate(`/product/${product.id}`)}
+                style={{ cursor: 'pointer' }}
+                title="상세 페이지로 이동"
               >
-                <S.ProductImage src={item.thumbnail} alt={item.name} />
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.price}</p>
-                </div>
+                {product.image && (
+                  <S.ProductImage
+                    src={Array.isArray(product.image) ? product.image[0] : product.image}
+                    alt={product.name}
+                  />
+                )}
+                <h3>{product.name}</h3>
+                {product.description && <p>{product.description}</p>}
               </S.ProductCard>
             ))
+          )
         ) : (
-          currentItems.map(product => (
-            <S.ProductCard
-              key={product.id}
-              onClick={() => navigate(`/product/${product.id}`)}
-              style={{ cursor: 'pointer' }}
-              title="상세 페이지로 이동"
-            >
-              {product.image && (
-                <S.ProductImage
-                  src={Array.isArray(product.image) ? product.image[0] : product.image}
-                  alt={product.name}
-                />
-              )}
-              <h3>{product.name}</h3>
-              {product.description && <p>{product.description}</p>}
-            </S.ProductCard>
-          ))
-        )
-      ) : (
-        <S.NoResult>검색 결과가 없습니다.</S.NoResult>
-      )}
-    </S.ProductList>
+          <S.NoResult>검색 결과가 없습니다.</S.NoResult>
+        )}
+      </S.ProductList>
 
+      {/* 페이지네이션 */}
       {totalPages > 1 && (
         <div style={{ textAlign: 'center', margin: '20px 0' }}>
           {Array.from({ length: totalPages }, (_, i) => (
@@ -281,6 +302,7 @@ function Home() {
       </S.ScrollTopButton>
 
       <footer style={{ textAlign: 'center', padding: '20px', fontSize: '14px' }}>
+        <p style={{ color: 'gray', fontSize: '12px' }}>"이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다."</p>
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSchAA0vaJQtxPO1KyGBkQqEJx4S3yAHAok1-FW0Jv33eqUYQw/viewform?usp=dialog"
           target="_blank"
