@@ -8,7 +8,7 @@ const tabs = [
   { id: 'smartphones', name: '📱 스마트폰', file: 'smartphones.json' },
   { id: 'earphones', name: '🎧 이어폰', file: 'earphones.json' },
   { id: 'laptops', name: '💻 노트북', file: 'laptops.json' },
-  { id: 'used', name: '♻️ 중고&가성비' }, 
+  { id: 'used', name: '♻️ 중고&미개봉' }, 
 ];
 
 const normalizeText = (text) => {
@@ -56,6 +56,10 @@ function Home() {
       case 'laptops':
         newTitle = "스펙마루 - 노트북 스펙 비교";
         newDescription = "사무용, 게이밍 노트북! 스펙마루에서 성능과 가격을 꼼꼼히 비교하세요.";
+        break;
+      case 'used':
+        newTitle = "스펙마루 - 중고폰 & 공기계 비교";
+        newDescription = "중고폰, 공기계 가격과 스펙을 스펙마루에서 비교하고 합리적인 구매를 도와드립니다.";
         break;
       case 'all':
       default:
