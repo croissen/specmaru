@@ -1,5 +1,33 @@
 [
   {
+    "id": "galaxyZTryFold",
+    "name": "갤럭시 Z 트라이폴드",
+    "buyLink": "https://link.coupang.com/a/dalrlb",
+    "image": 
+    [
+      "https://img.kr.news.samsung.com/kr/wp-content/uploads/2025/12/02091913/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B0%A4%EB%9F%AD%EC%8B%9CZ%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%8F%B4%EB%93%9C-%EA%B3%B5%EA%B0%9C-1.jpg",
+      "https://img.kr.news.samsung.com/kr/wp-content/uploads/2025/12/02091916/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B0%A4%EB%9F%AD%EC%8B%9CZ%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%8F%B4%EB%93%9C-%EA%B3%B5%EA%B0%9C-2.jpg",
+      "https://img.kr.news.samsung.com/kr/wp-content/uploads/2025/12/02091919/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B0%A4%EB%9F%AD%EC%8B%9CZ%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%8F%B4%EB%93%9C-%EA%B3%B5%EA%B0%9C-3.jpg",
+      "https://img.kr.news.samsung.com/kr/wp-content/uploads/2025/12/02091923/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B0%A4%EB%9F%AD%EC%8B%9CZ%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%8F%B4%EB%93%9C-%EA%B3%B5%EA%B0%9C-4.jpg",
+      "https://img.kr.news.samsung.com/kr/wp-content/uploads/2025/12/02091927/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B0%A4%EB%9F%AD%EC%8B%9CZ%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%8F%B4%EB%93%9C-%EA%B3%B5%EA%B0%9C-5.jpg"
+    ],
+    "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "12.12경 출시예정",
+      "출시일": "2025.12",
+      "운영체제": "Android 16 One UI 8.0",
+      "컬러": "크래프티드 블랙",
+      "저장용량": "256GB",
+      "디스플레이": "메인: 25.3cm(10in) Dynamic AMOLED 2X\n해상도: QXGA+ (2160 × 1584)\n커버: 16.5cm(6.5in) Dynamic AMOLED 2X\n해상도: FHD+ (2520 × 1080)\n최대밝기 1900니트/주사율 120Hz",
+      "크기": "접었을 때: 159.2 x 75.0 x 12.9mm\n펼쳤을 때: 159.2 x 214.1 x 3.9mm",
+      "무게": "309g",
+      "칩": "AP: Snapdragon 8 Elite\nCPU: 10코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Xclipse 940\nRAM: 16GB",
+      "카메라": "후면: 광각 200MP F1.7\n초광각 12MP F2.2\n망원 10MP F2.4 (3배 광학줌)\n커버카메라 10MP F2.2\n내부 전면 10MP F2.2",
+      "배터리": "5600mAh",
+      "가격": "3,600,000원 예상"
+    }
+  },
+  {
     "id": "iphone17",
     "name": "아이폰 17",
     "buyLink": "https://link.coupang.com/a/c3EhtU",
