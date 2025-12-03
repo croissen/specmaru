@@ -32,6 +32,7 @@ function Home() {
   const [allProducts, setAllProducts] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
+  const [subCat, setSubCat] = useState('all'); // 서브카테고리 상태
   const itemsPerPage = 10;
 
   const [helmetMeta, setHelmetMeta] = useState({
@@ -91,6 +92,7 @@ function Home() {
 
   useEffect(() => {
     setCurrentPage(1);
+    setSubCat('all'); // 탭 바뀌면 서브카테 초기화
   }, [activeTab]);
 
   const exampleComparisons = [
@@ -99,16 +101,26 @@ function Home() {
     { id1: 'galaxyBook5Pro', id2: 'macBookAir13', title: '갤럭시북5 프로 vs 맥북 에어 13 비교' },
   ];
 
+  // used 서브탭
+  const usedSubTabs = [
+    { id: 'all', name: '전체' },
+    { id: 'phone', name: '스마트폰' },
+    { id: 'note', name: '노트북' },
+    { id: 'ear', name: '이어폰' },
+  ];
+
   const filteredProducts = allProducts
     .filter(product => {
       const matchesCategory = activeTab === 'all' ? true : product.category === activeTab;
+      const matchesSubCat = activeTab === 'used' && subCat !== 'all' ? product.cat === subCat : true;
+
       const normalizedSearch = normalizeText(searchTerm);
       const normalizedId = normalizeText(product.id);
       const normalizedName = normalizeText(product.name);
       const specsString = product.specs ? Object.values(product.specs).join(' ') : '';
       const normalizedSpecs = normalizeText(specsString);
 
-      return matchesCategory && (
+      return matchesCategory && matchesSubCat && (
         normalizedId.includes(normalizedSearch) ||
         normalizedName.includes(normalizedSearch) ||
         normalizedSpecs.includes(normalizedSearch)
@@ -164,6 +176,21 @@ function Home() {
           </S.Tab>
         ))}
       </S.Tabs>
+
+      {/* used 서브탭 렌더링 */}
+      {activeTab === 'used' && (
+        <S.SubTabs>
+          {usedSubTabs.map(sub => (
+            <S.SubTab
+              key={sub.id}
+              active={subCat === sub.id}
+              onClick={() => setSubCat(sub.id)}
+            >
+              {sub.name}
+            </S.SubTab>
+          ))}
+        </S.SubTabs>
+      )}
 
       {/* 사이트 내 검색은 used 탭 제외 */}
       {activeTab !== 'used' && (
