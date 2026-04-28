@@ -2,7 +2,7 @@
   {
     "id": "galaxyZTryFold",
     "name": "갤럭시 Z 트라이폴드",
-    "buyLink": "https://link.coupang.com/a/dvQlfe",
+    "buyLink": "https://link.coupang.com/a/exS9Ae",
     "image": 
     [
       "https://img.kr.news.samsung.com/kr/wp-content/uploads/2025/12/02091913/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EB%AA%A8%EB%B0%94%EC%9D%BC-%EA%B0%A4%EB%9F%AD%EC%8B%9CZ%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%8F%B4%EB%93%9C-%EA%B3%B5%EA%B0%9C-1.jpg",
@@ -391,6 +391,87 @@
     }
   },
   {
+    "id": "galaxyS26",
+    "name": "갤럭시 S26",
+    "buyLink": "https://link.coupang.com/a/ex0Wek",
+    "image": 
+    [
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207562746615-f49c5883-fbe1-4d38-8799-e88fc95e423a.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207711966510-5a587e5c-b59d-4f7e-ba2f-2568879d7a4c.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207499234876-5a4a25e4-3464-4230-b51e-5b73f146e7ce.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207638258025-b75d4aa9-6dcb-42f7-9c75-b7ed8ebf1118.jpg"
+      
+    ],
+      "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-S942N",
+      "출시일": "2026.03",
+      "운영체제": "Android 16",
+      "컬러": "스카이블루, 코발트바이올렛, 화이트, 블랙",
+      "저장용량": "256GB, 512GB",
+      "디스플레이": "15.9cm(6.3in) Dynamic AMOLED 2X\n해상도: FHD+ (2340 x 1080)\n최대밝기 2600니트/주사율 120Hz",
+      "크기": "71.7 x 149.6 x 7.2 mm",
+      "무게": "167g",
+      "칩": "AP: Exynos 2600\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
+      "카메라": "초광각 12MP F2.2\n광각50MP F1.8\n망원 10MP F2.4\n전면 12MP F2.2",
+      "배터리": "4300mAh"
+    }
+  },
+  {
+    "id": "galaxyS26Plus",
+    "name": "갤럭시 S26+",
+    "buyLink": "https://link.coupang.com/a/ex1Fkz",
+    "image": 
+    [
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207562746615-f49c5883-fbe1-4d38-8799-e88fc95e423a.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207711966510-5a587e5c-b59d-4f7e-ba2f-2568879d7a4c.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207499234876-5a4a25e4-3464-4230-b51e-5b73f146e7ce.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207638258025-b75d4aa9-6dcb-42f7-9c75-b7ed8ebf1118.jpg"
+      
+    ],
+      "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-S947N",
+      "출시일": "2026.03",
+      "운영체제": "Android 16",
+      "컬러": "스카이블루, 코발트바이올렛, 화이트, 블랙",
+      "저장용량": "256GB, 512GB",
+      "디스플레이": "16.9cm(6.3in) Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
+      "크기": "75.8 x 158.4 x 7.3 mm",
+      "무게": "190g",
+      "칩": "AP: Exynos 2600\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
+      "카메라": "초광각 12MP F2.2\n광각50MP F1.8\n망원 10MP F2.4\n전면 12MP F2.2",
+      "배터리": "4900mAh"
+    }
+  },
+  {
+    "id": "galaxyS26Ultra",
+    "name": "갤럭시 S26 Ultra",
+    "buyLink": "https://link.coupang.com/a/ex1IbJ",
+    "image": 
+    [
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207895452900-bfa7f03f-c655-4f8e-bba9-9f65fb92c74f.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701208054017540-8164ca0d-9be5-44c9-b79e-1e02ab996a04.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/1701207895452900-bfa7f03f-c655-4f8e-bba9-9f65fb92c74f.jpg",
+      "//thumbnail.coupangcdn.com/thumbnails/remote/492x492ex/imWage/retail/images/1701207978444533-d14a6239-2bb0-4eee-bb5c-953dc4066691.jpg"
+      
+    ],
+      "specs": {
+      "제조사": "삼성 Samsung",
+      "모델명": "SM-S948N",
+      "출시일": "2026.03",
+      "운영체제": "Android 16",
+      "컬러": "스카이블루, 코발트바이올렛, 화이트, 블랙",
+      "저장용량": "256GB, 512GB, 1TB",
+      "디스플레이": "17.5cm(6.3in) Dynamic AMOLED 2X\n해상도: QHD+ (3120 x 1440)\n최대밝기 2600니트/주사율 120Hz",
+      "크기": "78.1 x 163.6 x 7.9 mm",
+      "무게": "214g",
+      "칩": "AP: Snapdragon 8 Elite\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12/16GB",
+      "카메라": "초광각 50MP F1.9\n광각200MP F1.4\n망원 50MP F2.9\n전면 12MP F2.2",
+      "배터리": "5000mAh"
+    }
+  },
+  {
     "id": "galaxyS25",
     "name": "갤럭시 S25",
     "buyLink": "https://link.coupang.com/a/cI4tRG",
@@ -412,7 +493,7 @@
       "디스플레이": "15.7cm(6.1in) Dynamic AMOLED 2X\n해상도: FHD+ (2340 x 1080)\n최대밝기 2600니트/주사율 120Hz",
       "크기": "70.5 x 146.9 x 7.2 mm",
       "무게": "162g",
-      "칩": "AP: Snapdragon 8 Elite\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
+      "칩": "AP: Exynos 2400\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
       "카메라": "초광각 12MP F2.2\n광각50MP F1.8\n망원 10MP F2.4\n전면 12MP F2.2",
       "배터리": "4000mAh"
     }
@@ -465,7 +546,7 @@
       "크기": "79 x 162.3 x 8.6 mm",
       "무게": "232g",
       "칩": "AP: Snapdragon 8 Gen 3\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 750\nRAM: 12GB",
-      "카메라": "초광각 12MP F2.4\n광각200MP F1.7\n망원1 10MP F2.2\n망원2 50MP F3.4\n전면 12MP F2.2",
+      "카메라": "초광각 12MP F2.2\n광각200MP F1.7\n망원 50MP F3.4\n전면 12MP F2.2",
       "배터리": "5,000mAh"
     }
   },
@@ -491,7 +572,7 @@
       "크기": "77.6 x 162.8 x 8.2 mm",
       "무게": "218g",
       "칩": "AP: Snapdragon 8 Elite\nCPU: 8코어 (2x 프라임 + 6x 퍼포먼스)\nGPU: Adreno 830(12코어)\nRAM: 12GB",
-      "카메라": "초광각 50MP F1.9\n광각200MP F1.7\n망원1 10MP F2.4\n망원2 50MP F3.4\n전면 12MP F2.2",
+      "카메라": "초광각 50MP F1.9\n광각200MP F1.7\n망원 50MP F3.4\n전면 12MP F2.2",
       "배터리": "5,000mAh"
     }
   },

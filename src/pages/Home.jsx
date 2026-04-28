@@ -5,6 +5,7 @@ import { Helmet } from 'react-helmet-async';
 
 const tabs = [
   { id: 'all', name: '🏠 홈' }, 
+  { id: 'news', name: '✍️ 소식' }, 
   { id: 'smartphones', name: '📱 스마트폰', file: 'smartphones.json' },
   { id: 'earphones', name: '🎧 이어폰', file: 'earphones.json' },
   { id: 'laptops', name: '💻 노트북', file: 'laptops.json' },
@@ -15,13 +16,7 @@ const normalizeText = (text) => {
   if (!text) return '';
   return text
     .toLowerCase()
-    .replace(/\s+/g, '')
-    .replace(/프로/g, 'pro')
-    .replace(/맥스/g, 'max')
-    .replace(/갤럭시/g, 'galaxy')
-    .replace(/아이폰/g, 'iphone')
-    .replace(/에어팟/g, 'airpods')
-    .replace(/버즈/g, 'buds');
+    .replace(/\s+/g, '');
 };
 
 function Home() {
@@ -46,6 +41,10 @@ function Home() {
     let newDescription = "스마트폰, 노트북, 이어폰 등 다양한 IT 기기의 상세 스펙을 한눈에 비교하고 최고의 제품을 찾아보세요!";
 
     switch (activeTab) {
+      case 'smartphones':
+        newTitle = "스펙마루 - 최신뉴스";
+        newDescription = "최신 뉴스를 한눈에 확인해보세요.";
+        break;
       case 'smartphones':
         newTitle = "스펙마루 - 스마트폰 스펙 비교";
         newDescription = "최신 스마트폰의 상세 스펙과 다양한 제품들을 스펙마루에서 비교해보세요.";
@@ -72,11 +71,13 @@ function Home() {
   useEffect(() => {
     async function fetchAllProducts() {
       try {
+        const newsData = await import(`../data/news.json`);
         const smartData = await import(`../data/smartphones.json`);
         const earphoneData = await import(`../data/earphones.json`);
         const laptopData = await import(`../data/laptops.json`);
         const usedData = await import(`../data/used.json`);
         const combined = [
+          ...newsData.default.map(p => ({ ...p, category: 'news' })),
           ...smartData.default.map(p => ({ ...p, category: 'smartphones' })),
           ...earphoneData.default.map(p => ({ ...p, category: 'earphones' })),
           ...laptopData.default.map(p => ({ ...p, category: 'laptops' })),
@@ -96,7 +97,7 @@ function Home() {
   }, [activeTab]);
 
   const exampleComparisons = [
-    { id1: 'iphone17ProMax', id2: 'galaxyS25Ultra', title: '아이폰 17 Pro Max vs 갤럭시 S25 Ultra 비교' },
+    { id1: 'iphone17ProMax', id2: 'galaxyS26Ultra', title: '아이폰 17 Pro Max vs 갤럭시 S26 Ultra 비교' },
     { id1: 'airpodsPro2', id2: 'galaxyBuds3Pro', title: '에어팟 프로2 vs 갤럭시 버즈3 프로 비교' },
     { id1: 'galaxyBook5Pro', id2: 'macBookAir13', title: '갤럭시북5 프로 vs 맥북 에어 13 비교' },
   ];
@@ -111,14 +112,32 @@ function Home() {
 
   const filteredProducts = allProducts
     .filter(product => {
-      const matchesCategory = activeTab === 'all' ? true : product.category === activeTab;
+      const matchesCategory =
+      activeTab === 'all'
+        ? ['smartphones', 'earphones', 'laptops'].includes(product.category)
+        : product.category === activeTab;
       const matchesSubCat = activeTab === 'used' && subCat !== 'all' ? product.cat === subCat : true;
 
       const normalizedSearch = normalizeText(searchTerm);
       const normalizedId = normalizeText(product.id);
-      const normalizedName = normalizeText(product.name);
-      const specsString = product.specs ? Object.values(product.specs).join(' ') : '';
-      const normalizedSpecs = normalizeText(specsString);
+      const normalizedName = normalizeText(
+        product.name || product.title || ''
+      );
+
+      const specsString = product.specs
+        ? Object.values(product.specs).join(' ')
+        : '';
+
+      const newsString = [
+        product.summary || '',
+        Array.isArray(product.sections)
+          ? product.sections.map(s => `${s.subtitle} ${s.content}`).join(' ')
+          : product.sections || ''
+      ].join(' ');
+
+      const normalizedSpecs = normalizeText(
+        specsString + ' ' + newsString
+      );
 
       return matchesCategory && matchesSubCat && (
         normalizedId.includes(normalizedSearch) ||
@@ -196,7 +215,7 @@ function Home() {
       {activeTab !== 'used' && (
         <S.SearchInput
           type="text"
-          placeholder="제품명 또는 브랜드 검색"
+          placeholder="키워드 검색"
           value={searchTerm}
           onChange={e => {
             setSearchTerm(e.target.value);
@@ -260,7 +279,7 @@ function Home() {
         {currentItems.length > 0 ? (
           activeTab === "used" ? (
             [...currentItems]
-              .sort((a, b) => Number(a.price.replace(/[^\d]/g, '')) - Number(b.price.replace(/[^\d]/g, '')))
+              .sort((a, b) =>  Number((a.price || '0').replace(/[^\d]/g, '')) - Number((b.price || '0').replace(/[^\d]/g, '')))
               .map(item => (
                 <S.ProductCard
                   key={item.id}
@@ -274,25 +293,43 @@ function Home() {
                   </div>
                 </S.ProductCard>
               ))
-          ) : (
-            currentItems.map(product => (
-              <S.ProductCard
-                key={product.id}
-                onClick={() => navigate(`/product/${product.id}`)}
-                style={{ cursor: 'pointer' }}
-                title="상세 페이지로 이동"
-              >
-                {product.image && (
-                  <S.ProductImage
-                    src={Array.isArray(product.image) ? product.image[0] : product.image}
-                    alt={product.name}
-                  />
-                )}
-                <h3>{product.name}</h3>
-                {product.description && <p>{product.description}</p>}
-              </S.ProductCard>
-            ))
-          )
+              ) : activeTab === "news" ? (
+                currentItems.map(item => (
+                  <S.ProductCard
+                    key={item.id}
+                    onClick={() => navigate(`/news/${item.id}`)}
+                    style={{ cursor: 'pointer' }}
+                  >
+                    {item.thumbnail && (
+                      <S.ProductImage
+                        src={item.thumbnail}
+                        alt={item.title}
+                      />
+                    )}
+                    <h3>{item.title}</h3>
+                    {item.description && <p>{item.description}</p>}
+                  </S.ProductCard>
+                ))
+              ) : (
+            
+              currentItems.map(product => (
+                <S.ProductCard
+                  key={product.id}
+                  onClick={() => navigate(`/product/${product.id}`)}
+                  style={{ cursor: 'pointer' }}
+                  title="상세 페이지로 이동"
+                >
+                  {product.image && (
+                    <S.ProductImage
+                      src={Array.isArray(product.image) ? product.image[0] : product.image}
+                      alt={product.name}
+                    />
+                  )}
+                  <h3>{product.name}</h3>
+                  {product.description && <p>{product.description}</p>}
+                </S.ProductCard>
+              ))
+            )
         ) : (
           <S.NoResult>검색 결과가 없습니다.</S.NoResult>
         )}

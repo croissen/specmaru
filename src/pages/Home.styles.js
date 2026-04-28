@@ -10,25 +10,26 @@ export const Container = styled.div`
 
 export const Tabs = styled.div`
   display: flex;
-  overflow-x: auto;
   white-space: nowrap;
   gap: 0.5rem;
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
-  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 
   &::-webkit-scrollbar {
     display: none;
   }
 
-  /* ✅ PC 화면에서는 가운데 정렬 */
-  @media (min-width: 600px) {
-    justify-content: center;
-  }
+  /* 기본: PC */
+  justify-content: center;
+  overflow-x: visible;
 
-  /* ✅ 모바일에서는 왼쪽 정렬 (기본) */
-  justify-content: flex-start;
+  /* 모바일 */
+  @media (max-width: 599px) {
+    justify-content: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
 `;
 
 export const Tab = styled.button`

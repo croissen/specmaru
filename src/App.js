@@ -4,6 +4,7 @@ import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import Compare from './pages/Compare';
+import NewsDetail from './pages/NewsDetail';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         
         {/* 제품 상세 페이지 라우트 */}
         <Route path="/product/:id" element={<ProductDetail />} />
-        
+        <Route path="/news/:id" element={<NewsDetail />} />
         {/* 비교 페이지 라우트 */}
         <Route path="/compare/:id1/:id2?" element={<Compare />} />
         <Route path="/:tabId" element={<Home />} />
