@@ -1,23 +1,23 @@
-// src/App.js
 import React from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import ProductDetail from './pages/ProductDetail';
 import Compare from './pages/Compare';
 import NewsDetail from './pages/NewsDetail';
+import Layout from './components/Layout';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} /> {/* 기본 홈 경로 */}
-        
-        {/* 제품 상세 페이지 라우트 */}
-        <Route path="/product/:id" element={<ProductDetail />} />
-        <Route path="/news/:id" element={<NewsDetail />} />
-        {/* 비교 페이지 라우트 */}
-        <Route path="/compare/:id1/:id2?" element={<Compare />} />
-        <Route path="/:tabId" element={<Home />} />
+        {/* ✅ Layout으로 전체 감싸기 */}
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/news/:id" element={<NewsDetail />} />
+          <Route path="/compare/:id1/:id2?" element={<Compare />} />
+          <Route path="/:tabId" element={<Home />} />
+        </Route>
       </Routes>
     </Router>
   );

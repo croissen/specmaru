@@ -35,9 +35,6 @@ function NewsDetail() {
       <S.Thumbnail src={newsItem.thumbnail} alt={newsItem.title} />
       <S.Summary>{newsItem.summary}</S.Summary>
       <S.Sections>{newsItem.sections}</S.Sections>
-      <S.CoupangMent>
-          {/* 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. */}
-      </S.CoupangMent>
       <S.ScrollTopButton
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         title="맨 위로 이동"

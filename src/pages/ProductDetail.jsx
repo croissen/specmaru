@@ -47,7 +47,12 @@ function ProductDetail() {
 
       {/* 이미지 슬라이더 */}
       <ImageSlider images={product.image} />
-
+      <S.ButtonDiv>
+        <S.BuyButton href={product.buyLink} target="_blank" rel="noopener noreferrer">
+          저렴한 가격보기
+        </S.BuyButton>
+        <S.CompareButton to={`/compare/${id}`}>스펙 비교하기</S.CompareButton>
+      </S.ButtonDiv>
       {/* 스펙 테이블 */}
       <S.SpecTable>
         <tbody>
@@ -71,17 +76,8 @@ function ProductDetail() {
       </S.SpecTable>
 
       {/* 버튼 영역 */}
-      <S.ButtonDiv>
-        <S.BuyButton href={product.buyLink} target="_blank" rel="noopener noreferrer">
-          저렴한 가격보기
-        </S.BuyButton>
-        <S.CompareButton to={`/compare/${id}`}>스펙 비교하기</S.CompareButton>
-      </S.ButtonDiv>
 
-      {/* 쿠팡 문구 */}
-      <S.CoupangMent>
-        이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
-      </S.CoupangMent>
+
     </S.Container>
   );
 }
