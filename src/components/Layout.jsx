@@ -1,12 +1,14 @@
 import React from 'react';
 import { Outlet, useNavigate } from 'react-router-dom';
 import * as S from './Layout.styles';
+import SideAds from './SideAds';
 
 function Layout() {
   const navigate = useNavigate();
 
   return (
     <S.Wrapper>
+      <SideAds />
       {/* 🔝 헤더 */}
       <S.Header onClick={() => navigate('/')}>
         <S.Logo>스마트하게 비교하고 사자! 스펙마루</S.Logo>

@@ -50,11 +50,12 @@ export const BuyButton = styled.a`
   background-color: #007bff;
   color: white;
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(14px, 4.2vw, 20px);
+  white-space: nowrap;
   text-decoration: none;
   border-radius: 6px;
   transition: background-color 0.3s ease;
-  
+
   &:hover {
     background-color: #0056b3;
   }
@@ -66,11 +67,12 @@ export const CompareButton = styled(Link)`
   background-color: #28a745;
   color: white;
   font-weight: 600;
-  font-size: 20px;
+  font-size: clamp(14px, 4.2vw, 20px);
+  white-space: nowrap;
   text-decoration: none;
   border-radius: 6px;
   transition: background-color 0.3s ease;
-  
+
   &:hover {
     background-color: #1e7e34;
   }

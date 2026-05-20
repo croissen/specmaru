@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './Home.styles';
-import { useNavigate, useParams } from 'react-router-dom'; 
+import { useNavigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import MobileInlineAd from '../components/MobileInlineAd';
 
 const tabs = [
   { id: 'all', name: '🏠 홈' }, 
@@ -41,7 +42,7 @@ function Home() {
     let newDescription = "스마트폰, 노트북, 이어폰 등 다양한 IT 기기의 상세 스펙을 한눈에 비교하고 최고의 제품을 찾아보세요!";
 
     switch (activeTab) {
-      case 'smartphones':
+      case 'news':
         newTitle = "스펙마루 - 최신뉴스";
         newDescription = "최신 뉴스를 한눈에 확인해보세요.";
         break;
@@ -218,6 +219,9 @@ function Home() {
           }}
         />
       )}
+
+      {/* 모바일 인라인 광고: 홈(all)·중고(used) 탭 제외, 검색창 바로 아래 */}
+      {activeTab !== 'all' && activeTab !== 'used' && <MobileInlineAd />}
 
       {/* used 탭에서는 쿠팡 검색 위젯 */}
       {activeTab === 'used' && (

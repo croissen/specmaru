@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.header`
-  padding: 50px 0 30px 0;
+  padding: 50px 16px 30px;
   text-align: center;
   cursor: pointer;
   border-bottom: 1px solid #eee;
@@ -18,8 +18,10 @@ export const Title = styled.div`
 `;
 
 export const Logo = styled.div`
-  font-size: 28px;
   font-weight: bold;
+  white-space: nowrap;
+  /* 화면이 좁아지면 줄바꿈 대신 글자 크기를 줄여 한 줄 유지 */
+  font-size: clamp(15px, 5.2vw, 28px);
 `;
 
 export const Main = styled.main`
