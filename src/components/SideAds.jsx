@@ -2,9 +2,8 @@ import { useEffect, useRef } from 'react';
 import styled from 'styled-components';
 import { useMediaQuery } from './useMediaQuery';
 
-// TODO: specmaru.com용 카카오 애드핏 광고단위 ID(160x600)로 교체하세요.
-const LEFT_AD_ID = 'DAN-SPECMARU-LEFT';
-const RIGHT_AD_ID = 'DAN-SPECMARU-RIGHT';
+const LEFT_AD_ID = 'DAN-eWf8U6jXBmXYCT0w';
+const RIGHT_AD_ID = 'DAN-D3zA6VFRHvl0RHfK';
 const AD_WIDTH = 160;
 const AD_HEIGHT = 600;
 

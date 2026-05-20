@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import * as S from './ProductDetail.styles';
+import MobileInlineAd from '../components/MobileInlineAd';
 
 function ProductDetail() {
   const { id } = useParams();
@@ -42,6 +43,9 @@ function ProductDetail() {
           홈으로
         </S.HomeButton>
       </S.HeaderButtons>
+
+      {/* 모바일 인라인 광고: 뒤로가기/홈으로 바로 아래 */}
+      <MobileInlineAd />
 
       <h1>{product.name}</h1>
 
