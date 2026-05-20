@@ -103,12 +103,46 @@ export const ProductCard = styled.div`
   &:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
+
+  /* 모바일: 사진을 줄여서라도 텍스트가 2줄 안에 깔끔히 들어오게 */
+  @media (max-width: 599px) {
+    gap: 14px;
+
+    h3, p {
+      flex: 1;
+      min-width: 0;
+      margin: 6px 0;
+      word-break: keep-all;
+      overflow-wrap: anywhere;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    h3 {
+      font-size: 1rem;
+      line-height: 1.45;
+    }
+
+    p {
+      font-size: 0.85rem;
+      line-height: 1.4;
+      color: #666;
+    }
+  }
 `;
 
 export const ProductImage = styled.img`
   max-height: 100px;
   object-fit: contain;
   border-radius: 8px;
+  flex-shrink: 0;
+
+  @media (max-width: 599px) {
+    width: 96px;
+    max-height: 72px;
+  }
 `;
 export const ExampleComparisonList = styled.div`
   display: flex;
