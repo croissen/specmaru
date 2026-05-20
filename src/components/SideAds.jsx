@@ -65,7 +65,7 @@ const LeftWrap = styled.div`
   width: ${AD_WIDTH}px;
   height: ${AD_HEIGHT}px;
   z-index: 30;
-  left: calc(50% - ${CONTENT_HALF}px - ${GAP}px - ${AD_WIDTH}px);
+  left: calc(47% - ${CONTENT_HALF}px - ${GAP}px - ${AD_WIDTH}px);
 `;
 
 const RightWrap = styled.div`
@@ -74,7 +74,7 @@ const RightWrap = styled.div`
   width: ${AD_WIDTH}px;
   height: ${AD_HEIGHT}px;
   z-index: 30;
-  right: calc(50% - ${CONTENT_HALF}px - ${GAP}px - ${AD_WIDTH}px);
+  right: calc(47% - ${CONTENT_HALF}px - ${GAP}px - ${AD_WIDTH}px);
 `;
 
 const Slot = styled.div`

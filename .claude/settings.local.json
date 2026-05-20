@@ -8,7 +8,10 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(npm install *)",
       "Bash(ls scripts *)",
-      "Bash(mkdir scripts *)"
+      "Bash(mkdir scripts *)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code} / type=%{content_type}\\\\n\" https://specmaru.com/sitemap.xml)",
+      "Bash(curl -s https://specmaru.com/sitemap.xml)",
+      "Bash(curl -s https://specmaru.com/robots.txt)"
     ]
   }
 }

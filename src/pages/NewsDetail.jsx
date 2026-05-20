@@ -55,7 +55,6 @@ function NewsDetail() {
       </S.Buttons>
 
       <S.Title>{newsItem.title}</S.Title>
-      <S.Thumbnail src={newsItem.thumbnail} alt={newsItem.title} />
       <S.Summary>{newsItem.summary}</S.Summary>
       <S.Sections>{newsItem.sections}</S.Sections>
       <S.ScrollTopButton
