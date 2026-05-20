@@ -5,7 +5,10 @@
       "Read(//c/Users/i/Desktop/thinking/lottobase/**)",
       "Bash(grep -niA3 -i \"adfit\\\\|kakao\\\\|광고\\\\|ad_unit\\\\|애드핏\\\\|단위\" PROJECT_HANDOFF.md)",
       "Bash(npm run *)",
-      "mcp__Claude_Preview__preview_start"
+      "mcp__Claude_Preview__preview_start",
+      "Bash(npm install *)",
+      "Bash(ls scripts *)",
+      "Bash(mkdir scripts *)"
     ]
   }
 }

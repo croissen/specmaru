@@ -99,6 +99,9 @@ export const ProductCard = styled.div`
   background-color: #fff;
   cursor: pointer;
   transition: box-shadow 0.2s ease;
+  /* <a>(Link)로 렌더링될 때 기본 링크 스타일 제거 */
+  text-decoration: none;
+  color: inherit;
 
   &:hover {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);

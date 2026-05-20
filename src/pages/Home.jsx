@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import * as S from './Home.styles';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import MobileInlineAd from '../components/MobileInlineAd';
 
@@ -172,10 +172,11 @@ function Home() {
       <Helmet>
         <title>{helmetMeta.title}</title>
         <meta name="description" content={helmetMeta.description} />
+        <link rel="canonical" href={`https://specmaru.com/${activeTab === 'all' ? '' : activeTab}`} />
         <meta property="og:title" content={helmetMeta.title} />
         <meta property="og:description" content={helmetMeta.description} />
         <meta property="og:image" content={helmetMeta.image} />
-        <meta property="og:url" content={window.location.href} />
+        <meta property="og:url" content={`https://specmaru.com/${activeTab === 'all' ? '' : activeTab}`} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="ko_KR" />
       </Helmet>
@@ -296,8 +297,8 @@ function Home() {
                 currentItems.map(item => (
                   <S.ProductCard
                     key={item.id}
-                    onClick={() => navigate(`/news/${item.id}`)}
-                    style={{ cursor: 'pointer' }}
+                    as={Link}
+                    to={`/news/${item.id}`}
                   >
                     {item.thumbnail && (
                       <S.ProductImage
@@ -310,13 +311,13 @@ function Home() {
                   </S.ProductCard>
                 ))
               ) : (
-            
+
               currentItems.map(product => (
                 <S.ProductCard
                   key={product.id}
-                  onClick={() => navigate(`/product/${product.id}`)}
-                  style={{ cursor: 'pointer' }}
-                  title="상세 페이지로 이동"
+                  as={Link}
+                  to={`/product/${product.id}`}
+                  title={`${product.name} 스펙 상세 보기`}
                 >
                   {product.image && (
                     <S.ProductImage

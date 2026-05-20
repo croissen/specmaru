@@ -19,29 +19,15 @@
       })(window.location);
     </script>
 
-    <!-- 검색엔진 최적화 (SEO) -->
+    <!-- 기본 메타: 페이지별 상세 메타(title/description/og 등)는 react-helmet-async가 관리.
+         JS 실행 전 기본 fallback 용도만 남기고, 중복 방지를 위해 관리형 메타는 Helmet으로 일원화. -->
     <title>스펙마루 - 스마트폰, 노트북, 이어폰, 중고폰 비교</title>
-    <meta name="description" content="스펙마루에서 스마트폰, 노트북, 이어폰, 중고폰, 공기계 등 다양한 기기 스펙을 비교하세요. 최신 모델, 가격, 성능을 한눈에 확인할 수 있습니다." />
     <meta name="keywords" content="스마트폰 스펙 비교, 노트북 스펙 비교, 이어폰 스펙 비교, 중고폰, 공기계, 스펙마루, IT 기기 비교" />
     <meta name="google" content="notranslate" />
 
     <!-- Apple / Web App -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-
-    <!-- Open Graph (SNS 공유 최적화) -->
-    <meta property="og:title" content="스펙마루 - 스마트폰, 노트북, 이어폰, 중고폰 비교" />
-    <meta property="og:description" content="스펙마루에서 스마트폰, 노트북, 이어폰, 중고폰, 공기계 등 다양한 기기 스펙을 비교하세요." />
-    <meta property="og:image" content="https://specmaru.com/logo.png" />
-    <meta property="og:url" content="https://specmaru.com" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ko_KR" />
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="스펙마루 - 스마트폰, 노트북, 이어폰, 중고폰 비교" />
-    <meta name="twitter:description" content="스펙마루에서 스마트폰, 노트북, 이어폰, 중고폰, 공기계 등 다양한 기기 스펙을 비교하세요." />
-    <meta name="twitter:image" content="https://specmaru.com/logo.png" />
 
     <!-- 구조화 데이터 (Rich Snippet) -->
     <script type="application/ld+json">
